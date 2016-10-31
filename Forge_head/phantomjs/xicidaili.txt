@@ -1,0 +1,1259 @@
+http://www.xicidaili.com/
+begin
+Status: success
+<!DOCTYPE html><html><head>
+  <title>免费代理IP_HTTP代理服务器IP_隐藏IP_QQ代理_国内外代理_西刺免费代理IP</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="Description" content="每日更新免费HTTP代理，所有代理均为6675端口高匿代理，可隐藏IP。国内每个省的http匿名代理实时更新，可以根据你的需要分批提取。">
+  <meta name="Keywords" content="免费HTTP代理,免费高匿代理,免费匿名代理,隐藏IP">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  </head><body>　　<meta name="applicable-device" content="pc,mobile">
+  <link rel="stylesheet" media="screen" href="http://fs.xicidaili.com/assets/application-9b7fb93ba2185c84900dd1088ca2a9165b1738ece9acffed4a4eb98f66e121e8.css">
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="yVatUuYac9bvByP2X9VgE1Jm8k9RFw4du2CZZFYojtIGXqe10E06OoK4GMrqTkL1HBvZBSSOQI1y+IMs2gjJjg==">
+
+
+  <div id="wrapper">
+    <div id="header">
+      <h1>西刺免费代理IP</h1>
+      <img alt="免费http代理" id="logo" src="http://fs.xicidaili.com/images/logo.png">
+      <div id="myurl">
+        XiciDaili.com
+      </div>
+      <ul id="nav">
+        <li><a class="active" href="/">首页</a></li>
+        <li><a href="/api">API提取</a></li>
+        <li><a class="false" href="/nn/">国内高匿代理</a></li>
+        <li><a class="false" href="/nt/">国内普通代理</a></li>
+        <li><a class="false" href="/wn/">国外高匿代理</a></li>
+        <li><a class="false" href="/wt/">国外普通代理</a></li>
+        <li><a class="false" href="/articles/">代理小百科</a></li>
+      </ul>
+    </div>
+    <div id="body" class="clearfix home">
+      
+
+<div id="home" class="clearfix">
+  
+  <div class="main">
+
+    <table id="ip_list">
+      <tbody><tr>
+  <th colspan="8"> <h2>国内高匿代理IP</h2>
+      <a class="more" href="/nn">更多</a></th>
+</tr>
+  <tr class="subtitle">
+    <th class="country">国家</th>
+    <th>代理IP地址</th>
+    <th>端口</th>
+    <th width="20%">服务器地址</th>
+    <th class="country">是否匿名</th>
+    <th>类型</th>
+          <th width="11%">存活时间</th>
+    <th width="12%">验证时间</th>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>120.25.105.45</td>
+    <td>81</td>
+    <td>北京</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>51天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>122.228.179.178</td>
+    <td>80</td>
+    <td>浙江温州</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>57天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"></td>
+    <td>139.196.108.68</td>
+    <td>80</td>
+    <td>长城宽带</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>337天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>123.56.74.13</td>
+    <td>8080</td>
+    <td>辽宁葫芦岛</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>30天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/mo.png" alt="Mo"></td>
+    <td>202.171.253.72</td>
+    <td>80</td>
+    <td>澳门</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>31天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>60.194.100.51</td>
+    <td>80</td>
+    <td>北京</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>682天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>122.96.59.104</td>
+    <td>80</td>
+    <td>江苏南京</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>1097天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>119.6.136.122</td>
+    <td>80</td>
+    <td>四川绵阳</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>326天</td>
+    <td>10分钟前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>221.226.82.130</td>
+    <td>8998</td>
+    <td>江苏南京</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>31天</td>
+    <td>10分钟前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>121.40.108.76</td>
+    <td>80</td>
+    <td>河北衡水</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>379天</td>
+    <td>12分钟前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"></td>
+    <td>139.196.140.9</td>
+    <td>80</td>
+    <td>长城宽带</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>51天</td>
+    <td>31分钟前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>202.108.2.42</td>
+    <td>80</td>
+    <td>北京</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>34天</td>
+    <td>1小时前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"></td>
+    <td>120.76.243.40</td>
+    <td>80</td>
+    <td>长城宽带</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>27天</td>
+    <td>1小时前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>119.254.84.90</td>
+    <td>80</td>
+    <td>北京</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>1272天</td>
+    <td>1小时前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>112.81.100.102</td>
+    <td>8888</td>
+    <td>江苏苏州</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>28天</td>
+    <td>1 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>112.243.184.242</td>
+    <td>8888</td>
+    <td>山东潍坊</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>27天</td>
+    <td>3 天</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>61.55.135.192</td>
+    <td>82</td>
+    <td>河北石家庄</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>27天</td>
+    <td>3 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>182.90.252.10</td>
+    <td>2226</td>
+    <td>广西梧州</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>72天</td>
+    <td>4 天</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>122.0.74.166</td>
+    <td>3389</td>
+    <td>河北沧州市任丘</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>25天</td>
+    <td>6 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>122.96.59.106</td>
+    <td>80</td>
+    <td>江苏南京</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>1119天</td>
+    <td>7 天</td>
+  </tr>
+  
+  
+
+    <tr>
+  <th colspan="8"> <h2>国内透明代理IP</h2>
+      <a class="more" href="/nt">更多</a></th>
+</tr>
+  <tr class="subtitle">
+    <th class="country">国家</th>
+    <th>代理IP地址</th>
+    <th>端口</th>
+    <th width="20%">服务器地址</th>
+    <th class="country">是否匿名</th>
+    <th>类型</th>
+          <th width="11%">存活时间</th>
+    <th width="12%">验证时间</th>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>60.191.180.38</td>
+    <td>3128</td>
+    <td>浙江台州</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>363天</td>
+    <td>不到1分钟</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>218.56.132.157</td>
+    <td>8080</td>
+    <td>山东临沂</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>337天</td>
+    <td>不到1分钟</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>211.153.17.151</td>
+    <td>80</td>
+    <td>北京</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>29天</td>
+    <td>不到1分钟</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>218.76.106.78</td>
+    <td>3128</td>
+    <td>湖南张家界</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>36天</td>
+    <td>不到1分钟</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"></td>
+    <td>101.254.188.198</td>
+    <td>8080</td>
+    <td></td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>321天</td>
+    <td>不到1分钟</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>218.56.132.156</td>
+    <td>8080</td>
+    <td>山东临沂</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>445天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>1.82.216.135</td>
+    <td>80</td>
+    <td>陕西西安</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>96天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>202.107.238.51</td>
+    <td>3128</td>
+    <td>浙江台州</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>374天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>218.56.132.155</td>
+    <td>8080</td>
+    <td>山东临沂</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>425天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>112.112.70.115</td>
+    <td>80</td>
+    <td>云南昆明</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>325天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>114.215.150.13</td>
+    <td>3128</td>
+    <td>北京</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>76天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>112.112.70.118</td>
+    <td>80</td>
+    <td>云南昆明</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>103天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>124.133.230.254</td>
+    <td>80</td>
+    <td>山东济南</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>30天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>112.112.70.116</td>
+    <td>80</td>
+    <td>云南昆明</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>338天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>115.28.101.22</td>
+    <td>3128</td>
+    <td>北京</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>68天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>122.72.33.138</td>
+    <td>80</td>
+    <td>甘肃</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>1393天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>60.207.239.247</td>
+    <td>3128</td>
+    <td>北京</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>29天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>59.34.2.93</td>
+    <td>3128</td>
+    <td>广东肇庆</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>79天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>60.206.148.135</td>
+    <td>3128</td>
+    <td>北京</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>39天</td>
+    <td>2分钟前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>218.90.174.167</td>
+    <td>3128</td>
+    <td>江苏无锡</td>
+    <td class="country">透明</td>
+    <td>HTTPS</td>
+      <td>935天</td>
+    <td>2分钟前</td>
+  </tr>
+  
+  
+
+    <tr>
+  <th colspan="8"> <h2>国外高匿代理IP</h2>
+      <a class="more" href="/wn">更多</a></th>
+</tr>
+  <tr class="subtitle">
+    <th class="country">国家</th>
+    <th>代理IP地址</th>
+    <th>端口</th>
+    <th width="20%">服务器地址</th>
+    <th class="country">是否匿名</th>
+    <th>类型</th>
+          <th width="11%">存活时间</th>
+    <th width="12%">验证时间</th>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/ca.png" alt="Ca"></td>
+    <td>47.88.195.233</td>
+    <td>3128</td>
+    <td>加拿大</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>29天</td>
+    <td>1分钟前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"></td>
+    <td>103.240.241.182</td>
+    <td>80</td>
+    <td>亚太地区</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>27天</td>
+    <td>20分钟前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/jp.png" alt="Jp"></td>
+    <td>14.101.41.162</td>
+    <td>8080</td>
+    <td>日本</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>37天</td>
+    <td>2 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/ca.png" alt="Ca"></td>
+    <td>47.89.53.92</td>
+    <td>3128</td>
+    <td>加拿大</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>47天</td>
+    <td>4 天</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/id.png" alt="Id"></td>
+    <td>203.130.228.60</td>
+    <td>8080</td>
+    <td>印度尼西亚</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>118天</td>
+    <td>14 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/gb.png" alt="Gb"></td>
+    <td>128.199.178.73</td>
+    <td>8080</td>
+    <td>英国</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>8天</td>
+    <td>16 天</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/us.png" alt="Us"></td>
+    <td>52.69.243.39</td>
+    <td>8080</td>
+    <td>美国特拉华州dupo</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>6天</td>
+    <td>16 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/us.png" alt="Us"></td>
+    <td>54.169.138.64</td>
+    <td>80</td>
+    <td>美国新泽西州(Mer</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>10天</td>
+    <td>18 天</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/us.png" alt="Us"></td>
+    <td>54.72.253.207</td>
+    <td>80</td>
+    <td>美国新泽西州(Mer</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>5天</td>
+    <td>18 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/nl.png" alt="Nl"></td>
+    <td>88.159.43.160</td>
+    <td>80</td>
+    <td>荷兰</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>125天</td>
+    <td>18 天</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/ae.png" alt="Ae"></td>
+    <td>94.207.230.226</td>
+    <td>80</td>
+    <td>阿联酋</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>328天</td>
+    <td>18 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/nl.png" alt="Nl"></td>
+    <td>83.128.29.187</td>
+    <td>80</td>
+    <td>荷兰</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>108天</td>
+    <td>19 天</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/fr.png" alt="Fr"></td>
+    <td>176.31.96.198</td>
+    <td>3128</td>
+    <td>法国</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>201天</td>
+    <td>19 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/nl.png" alt="Nl"></td>
+    <td>62.45.248.11</td>
+    <td>80</td>
+    <td>荷兰</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>128天</td>
+    <td>19 天</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/vn.png" alt="Vn"></td>
+    <td>113.185.19.192</td>
+    <td>80</td>
+    <td>越南</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>10天</td>
+    <td>19 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/de.png" alt="De"></td>
+    <td>31.220.15.234</td>
+    <td>80</td>
+    <td>德国</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>3天</td>
+    <td>20 天</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/kr.png" alt="Kr"></td>
+    <td>61.78.133.143</td>
+    <td>8080</td>
+    <td>韩国</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>60天</td>
+    <td>20 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/br.png" alt="Br"></td>
+    <td>186.229.29.170</td>
+    <td>80</td>
+    <td>巴西</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>3天</td>
+    <td>21 天</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"></td>
+    <td>192.249.72.148</td>
+    <td>3128</td>
+    <td>北美地区</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>17天</td>
+    <td>21 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/fr.png" alt="Fr"></td>
+    <td>178.32.153.219</td>
+    <td>80</td>
+    <td>法国</td>
+    <td class="country">高匿</td>
+    <td>HTTP</td>
+      <td>20天</td>
+    <td>21 天</td>
+  </tr>
+  
+  
+
+    <tr>
+  <th colspan="8"> <h2>国外透明代理IP</h2>
+      <a class="more" href="/wt">更多</a></th>
+</tr>
+  <tr class="subtitle">
+    <th class="country">国家</th>
+    <th>代理IP地址</th>
+    <th>端口</th>
+    <th width="20%">服务器地址</th>
+    <th class="country">是否匿名</th>
+    <th>类型</th>
+          <th width="11%">存活时间</th>
+    <th width="12%">验证时间</th>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/gb.png" alt="Gb"></td>
+    <td>213.165.155.189</td>
+    <td>80</td>
+    <td>英国</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>31天</td>
+    <td>2分钟前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/kw.png" alt="Kw"></td>
+    <td>168.187.10.213</td>
+    <td>8080</td>
+    <td>科威特</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>140天</td>
+    <td>17小时前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/us.png" alt="Us"></td>
+    <td>207.182.139.74</td>
+    <td>80</td>
+    <td>美国俄亥俄州哥伦布市</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>5天</td>
+    <td>1 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/us.png" alt="Us"></td>
+    <td>70.88.182.181</td>
+    <td>80</td>
+    <td>美国田纳西州纳什维尔</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>377天</td>
+    <td>2 天</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/id.png" alt="Id"></td>
+    <td>180.250.165.156</td>
+    <td>80</td>
+    <td>印度尼西亚</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>156天</td>
+    <td>3 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/id.png" alt="Id"></td>
+    <td>182.253.201.78</td>
+    <td>10000</td>
+    <td>印度尼西亚</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>179天</td>
+    <td>5 天</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/us.png" alt="Us"></td>
+    <td>168.102.134.47</td>
+    <td>8080</td>
+    <td>美国印第安纳大学普渡</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>23天</td>
+    <td>6 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"></td>
+    <td>107.170.213.149</td>
+    <td>3128</td>
+    <td>北美地区</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>29天</td>
+    <td>7 天</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/kr.png" alt="Kr"></td>
+    <td>219.255.197.90</td>
+    <td>3128</td>
+    <td>韩国</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>224天</td>
+    <td>7 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cl.png" alt="Cl"></td>
+    <td>200.29.191.149</td>
+    <td>3128</td>
+    <td>智利</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>23天</td>
+    <td>7 天</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/vn.png" alt="Vn"></td>
+    <td>123.30.238.16</td>
+    <td>3128</td>
+    <td>越南越南邮电集团公司</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>76天</td>
+    <td>7 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/az.png" alt="Az"></td>
+    <td>94.20.21.38</td>
+    <td>3128</td>
+    <td>阿塞拜疆</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>96天</td>
+    <td>7 天</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/kr.png" alt="Kr"></td>
+    <td>211.110.127.210</td>
+    <td>3128</td>
+    <td>韩国</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>250天</td>
+    <td>7 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/de.png" alt="De"></td>
+    <td>5.9.117.40</td>
+    <td>3128</td>
+    <td>德国</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>121天</td>
+    <td>8 天</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/it.png" alt="It"></td>
+    <td>164.132.3.14</td>
+    <td>808</td>
+    <td>意大利</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>41分钟</td>
+    <td>9 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/th.png" alt="Th"></td>
+    <td>122.155.3.143</td>
+    <td>3128</td>
+    <td>泰国</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>20天</td>
+    <td>9 天</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/id.png" alt="Id"></td>
+    <td>182.253.201.76</td>
+    <td>10000</td>
+    <td>印度尼西亚</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>57天</td>
+    <td>10 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/vn.png" alt="Vn"></td>
+    <td>113.161.68.146</td>
+    <td>8080</td>
+    <td>越南</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>86天</td>
+    <td>10 天</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/co.png" alt="Co"></td>
+    <td>190.60.245.146</td>
+    <td>80</td>
+    <td>哥伦比亚</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>3天</td>
+    <td>11 天</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"></td>
+    <td>43.243.112.79</td>
+    <td>3128</td>
+    <td>亚太地区</td>
+    <td class="country">透明</td>
+    <td>HTTP</td>
+      <td>299天</td>
+    <td>11 天</td>
+  </tr>
+  
+  
+
+    <tr>
+  <th colspan="8"> <h2>SOCKS IP代理</h2>
+      <a class="more" href="/qq">更多</a></th>
+</tr>
+  <tr class="subtitle">
+    <th class="country">国家</th>
+    <th>代理IP地址</th>
+    <th>端口</th>
+    <th width="20%">服务器地址</th>
+    <th class="country">是否匿名</th>
+    <th>类型</th>
+          <th width="11%">存活时间</th>
+    <th width="12%">验证时间</th>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>110.73.33.207</td>
+    <td>6673</td>
+    <td>广西防城港</td>
+    <td class="country">高匿</td>
+    <td>socks4/5</td>
+      <td>1266天</td>
+    <td>3 月前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>122.89.138.20</td>
+    <td>6675</td>
+    <td>江苏徐州</td>
+    <td class="country">高匿</td>
+    <td>socks4/5</td>
+      <td>1258天</td>
+    <td>4 月前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>110.72.20.245</td>
+    <td>6673</td>
+    <td>广西贵港</td>
+    <td class="country">高匿</td>
+    <td>socks4/5</td>
+      <td>1245天</td>
+    <td>5 月前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>42.96.187.107</td>
+    <td>3128</td>
+    <td>北京</td>
+    <td class="country">透明</td>
+    <td>socks4/5</td>
+      <td>290天</td>
+    <td>5 月前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>61.138.104.30</td>
+    <td>1080</td>
+    <td>内蒙古包头</td>
+    <td class="country">高匿</td>
+    <td>socks4/5</td>
+      <td>1196天</td>
+    <td>6 月前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/lu.png" alt="Lu"></td>
+    <td>217.37.19.115</td>
+    <td>9050</td>
+    <td>英国</td>
+    <td class="country">透明</td>
+    <td>socks4/5</td>
+      <td>113天</td>
+    <td>7 月前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>110.73.30.246</td>
+    <td>6666</td>
+    <td>广西防城港</td>
+    <td class="country">高匿</td>
+    <td>socks4/5</td>
+      <td>1191天</td>
+    <td>7 月前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>121.31.199.91</td>
+    <td>6675</td>
+    <td>广西桂林</td>
+    <td class="country">高匿</td>
+    <td>socks4/5</td>
+      <td>1138天</td>
+    <td>8 月前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>182.90.15.172</td>
+    <td>6675</td>
+    <td>广西梧州</td>
+    <td class="country">高匿</td>
+    <td>socks4/5</td>
+      <td>1122天</td>
+    <td>9 月前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>202.38.95.66</td>
+    <td>1080</td>
+    <td>安徽合肥</td>
+    <td class="country">高匿</td>
+    <td>socks4/5</td>
+      <td>1105天</td>
+    <td>10 月前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>113.93.120.136</td>
+    <td>6675</td>
+    <td>广东江门市新会区</td>
+    <td class="country">高匿</td>
+    <td>socks4/5</td>
+      <td>1082天</td>
+    <td>10 月前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>101.68.64.83</td>
+    <td>1080</td>
+    <td>浙江杭州</td>
+    <td class="country">透明</td>
+    <td>socks4/5</td>
+      <td>31天</td>
+    <td>10 月前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/jp.png" alt="Jp"></td>
+    <td>115.159.96.136</td>
+    <td>1080</td>
+    <td>河南郑州</td>
+    <td class="country">透明</td>
+    <td>socks4/5</td>
+      <td>7小时</td>
+    <td>12 月前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/cn.png" alt="Cn"></td>
+    <td>61.54.206.0</td>
+    <td>6675</td>
+    <td>河南三门峡</td>
+    <td class="country">高匿</td>
+    <td>socks4/5</td>
+      <td>1010天</td>
+    <td>1 年前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/jp.png" alt="Jp"></td>
+    <td>116.192.22.192</td>
+    <td>1080</td>
+    <td>上海</td>
+    <td class="country">透明</td>
+    <td>socks4/5</td>
+      <td>2天</td>
+    <td>1 年前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/us.png" alt="Us"></td>
+    <td>108.61.189.87</td>
+    <td>5689</td>
+    <td>美国</td>
+    <td class="country">高匿</td>
+    <td>socks4/5</td>
+      <td>17天</td>
+    <td>1 年前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/ua.png" alt="Ua"></td>
+    <td>80.78.38.146</td>
+    <td>1080</td>
+    <td>乌克兰</td>
+    <td class="country">透明</td>
+    <td>socks4/5</td>
+      <td>749天</td>
+    <td>1 年前</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/ru.png" alt="Ru"></td>
+    <td>46.180.66.239</td>
+    <td>1080</td>
+    <td>俄罗斯</td>
+    <td class="country">高匿</td>
+    <td>socks4/5</td>
+      <td>745天</td>
+    <td>1 年前</td>
+  </tr>
+  
+  <tr class="odd">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/ua.png" alt="Ua"></td>
+    <td>91.185.215.141</td>
+    <td>5818</td>
+    <td>斯洛文尼亚</td>
+    <td class="country">透明</td>
+    <td>socks4/5</td>
+      <td>62天</td>
+    <td>大约 2 年</td>
+  </tr>
+  
+  <tr class="">
+    <td class="country"><img src="http://fs.xicidaili.com/images/flag/ua.png" alt="Ua"></td>
+    <td>194.247.12.11</td>
+    <td>5714</td>
+    <td>乌克兰</td>
+    <td class="country">透明</td>
+    <td>socks4/5</td>
+      <td>167天</td>
+    <td>大约 2 年</td>
+  </tr>
+  
+  
+
+    </tbody></table>  
+    
+  </div>
+<div class="side">
+    <h2>购买专业版</h2>
+    <a target="_blank" ref="nofollow" href="http://www.daxiangdaili.com/"><img src="http://fs.xicidaili.com/images/side.png" alt="Side"></a>
+  </div>
+ 
+  
+  
+</div>
+<div id="links">
+
+    
+
+  <ul>
+    <li>http代理使用帮助：</li>
+    <li><a href="/articles/1">如何在360浏览器设置代理IP</a></li>
+  </ul>
+</div>
+    </div>
+    
+    
+    <div id="footer">
+     <span class="site_name">西刺免费代理IP</span> 
+     <span class="copy">©</span>
+     <span class="site_url">XiciDaili.com </span>
+    </div>
+  </div>
+  <div style="display:none">
+    <script src="http://s11.cnzz.com/stat.php?id=1256960793&amp;web_id=1256960793" language="JavaScript"></script><script src="http://c.cnzz.com/core.php?web_id=1256960793&amp;t=z" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1256960793" target="_blank" title="站长统计">站长统计</a>
+  </div>
+
+</body></html>
