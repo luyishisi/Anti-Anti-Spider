@@ -12,3 +12,6 @@ date：2016.10.28
 做一个demo而已。可以使用命令
 phantomjs forge_X_FORWARDED_FOR.js http://www.stilllistener.com/checkpoint1/test11/
 可以检测使用伪造的效果，你要知道真实的ip是不可以伪造的（真伪造了数据回不来，可用来DDOS），但是可以伪造出使用代理的假象。并且部分网站是只检测该项。
+
+源代码用网页打开
+
