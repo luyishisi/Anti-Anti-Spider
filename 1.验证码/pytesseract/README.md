@@ -1,0 +1,1 @@
+使用pytesseract来实现符号的识别
