@@ -1,4 +1,15 @@
-#coding:utf-8
+#!/usr/bin/env python
+# -*- coding: UTF-8 -*-
+#-------------------------------------------------------------------------
+#   程序：read_useragent_txt_forge.py
+#   版本：0.1
+#   作者：ly
+#   日期：编写日期2016/11/10
+#   语言：Python 2.7.x
+#   操作：python read_useragent_txt_forge.py
+#   功能：	读取一个随机的头部User-Agent 信息 添加到请求中
+#
+#-------------------------------------------------------------------------
 import requests
 import random
 
@@ -11,7 +22,7 @@ def get_request(url,user_agent):
 	'''参数引入及头信息'''
 	if len(user_agent ) < 10:
 		user_agent = 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:39.0) Gecko/20100101 Firefox/39.0'
-	
+
 	headers = {
     	'Host':"map.baidu.com",
     	"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -22,12 +33,12 @@ def get_request(url,user_agent):
 	}
 
 	#可设置代理
-    #proxies = { 
-	#	"http": "http://"+ip,  
-	#	"https": "http://"+ip,  
+    #proxies = {
+	#	"http": "http://"+ip,
+	#	"https": "http://"+ip,
 	#}
     #url = "https://www.urlteam.org"
-	
+
 	html=requests.get(url,headers=headers, timeout=10).text
 	print html
 	return html
@@ -47,4 +58,3 @@ if __name__ == '__main__':
 		user_agent = random.choice(user_agent_list)
 
 		get_request(url,user_agent)
-	
