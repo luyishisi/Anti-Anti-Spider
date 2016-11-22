@@ -11,11 +11,19 @@
 #
 #-------------------------------------------------------------------------
 import requests
+import re,sys
+from lxml import etree
+
+# --------------------------------------------------
+# 中文编码设置
+reload(sys)
+sys.setdefaultencoding('utf-8')
+Type = sys.getfilesystemencoding()
 
 
 #此处修改头字段,
 headers = {
-    'Host':"map.baidu.com",
+    'Host':"www.xicidaili.com",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Encoding": "gzip, deflate",
     "Accept-Language": "en-US,en;q=0.5",
@@ -34,10 +42,22 @@ def get_request(url,headers):
 	#}
     #url = "https://www.urlteam.org"
 
-	html=requests.get(url,headers=headers, timeout=10).text
+	html=requests.get(url,headers=headers, timeout=10).text#.decode('utf-8')
 	print html
 	return html
 
 if __name__ == '__main__':
-	url = "https://www.urlteam.org"
-	get_request(url,headers)
+    url = "http://www.xicidaili.com/nn"
+    html_code = get_request(url,headers)
+
+    re_list_ip = re.findall(r'<td>\d*\.\d*\.\d*\.\d*</td>',html_code)
+    re_list_port = re.findall(r'<td>[\d]*</td>',html_code)
+    re_list_live_time = re.findall(r'<td>\d*[小时分钟天]*</td>',html_code)
+    re_list_time = re.findall(r'<td>\d*-\d*-\d* \d*:\d*</td>',html_code)
+    l = len(re_list_ip)
+    print len(re_list_port)
+    print len(re_list_live_time)
+    print len(re_list_time)
+
+
+    #for i in range(l):

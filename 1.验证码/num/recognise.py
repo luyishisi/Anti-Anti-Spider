@@ -17,16 +17,18 @@ def imagesget():
             break
 
 def convert_image(image):
-    image=image.convert('L')
+    image=image.convert('L')#灰度
     image2=Image.new('L',image.size,255)
     for x in range(image.size[0]):
         for y in range(image.size[1]):
             pix=image.getpixel((x,y))
-            if pix<120:
+            if pix<120:#灰度低于120 设置为 0
                 image2.putpixel((x,y),0)
+    image2.save('L.jpeg')#将灰度图存储下来看效果
     return image2
 
 def cut_image(image):
+    ''' 字符切割,根据黑色的连续性,当某一列出现黑色为标志,当黑色消失为结束点'''
     inletter=False
     foundletter=False
     letters=[]
@@ -48,10 +50,12 @@ def cut_image(image):
     images=[]
     for letter in letters:
         img=image.crop((letter[0],0,letter[1],image.size[1]))
+        #img.save(str(letter[0])+'.jpeg')#展示切割效果
         images.append(img)
     return images
 
 def buildvector(image):
+    ''' 图片转换成矢量,将二维的图片转为一维'''
     result={}
     count=0
     for i in image.getdata():
@@ -82,6 +86,7 @@ class CaptchaRecognize:
 
     #计算矢量之间的 cos 值
     def relation(self,concordance1, concordance2):
+            
         relevance = 0
         topvalue = 0
         for word, count in concordance1.items():
@@ -90,8 +95,8 @@ class CaptchaRecognize:
         return topvalue / (self.magnitude(concordance1) * self.magnitude(concordance2))
 
     def recognise(self,image):
-        image=convert_image(image)
-        images=cut_image(image)
+        image=convert_image(image)#二值化
+        images=cut_image(image)#字符单独切割出来
         vectors=[]
         for img in images:
             vectors.append(buildvector(img))
@@ -113,7 +118,10 @@ class CaptchaRecognize:
 
 if __name__=='__main__':
     imageRecognize=CaptchaRecognize()
-    image=Image.open('0.jpeg')
+    # 设置图片路径
+    image=Image.open('3.jpeg')
+
     result=imageRecognize.recognise(image)
+
     string=[''.join(item[1]) for item in result]
     print(string)

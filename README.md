@@ -1,6 +1,11 @@
 # Anti-Anti-Spider
 # 2016-10-24 
 
+11/22日起此仓库不再维护,新仓库网址位于https://github.com/luyishisi/Anti-Anti-Spider 
+
+欢迎stat
+
+
 本项目由URLTEAM维护
 
 作者博客 www.urlteam.org 
