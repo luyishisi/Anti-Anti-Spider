@@ -44,7 +44,7 @@ def get_request(url,user_agent):
 	return html
 
 if __name__ == '__main__':
-	url = "https://www.urlteam.org"
+	url = "https://shop.m.taobao.com/shop/coupon.htm?sellerId=102077180&activityId=c81d798cbbc143c8b443d2b73b81b2bf&qq-pf-to=pcqq.group"
 
 	#导入数据集
 	user_agent_list = []
