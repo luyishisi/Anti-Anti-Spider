@@ -27,11 +27,11 @@ driver.get("https://stackoverflow.com/users/login?ssrc=head&returnurl=http%3a%2f
 
 #获取用户名框并输入
 elem = driver.find_element_by_xpath('//*[@id="email"]')
-elem.send_keys("a83533774@gmail.com")
+elem.send_keys("**")
 
 #获取密码框并输入
 elem = driver.find_element_by_xpath('//*[@id="password"]')
-elem.send_keys("luyiluyi123")
+elem.send_keys("**")
 
 #通过回车键进行登录
 elem.send_keys(Keys.RETURN)
