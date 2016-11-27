@@ -39,13 +39,13 @@ elem.send_keys(Keys.RETURN)
 time.sleep(5)
 
 #保存页面截图和源码
-name = '~/so_img/'+time.ctime().replace(' ','-')+'.png'
-name_html = "~/so_img/"+time.ctime().replace(' ','-')+'.html'
+name = './so_img/'+time.ctime().replace(' ','-')+'.png'
+#name_html = "./so_img/"+time.ctime().replace(' ','-')+'.html'
 
 driver.save_screenshot(name)
-f = open(name_html.encode('utf-8'),'w')
-f.write(driver.page_source)
-f.close()
+#f = open(name_html.encode('utf-8'),'w')
+#f.write(driver.page_source)
+#f.close()
 
 #print driver.page_source
 
