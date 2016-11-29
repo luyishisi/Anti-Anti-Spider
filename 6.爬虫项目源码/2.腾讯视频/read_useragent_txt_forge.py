@@ -42,7 +42,8 @@ if __name__ == '__main__':
 
 #-------------------测试结果-------------------------------
 # 将此链接放在浏览器中可以直接播放,虽然有广告....至于别的数据太简单那就不抓了.
-#[
-#u'http://player.youku.com/player.php/sid/XMTgzNDI0MjkzNg==/v.swf',
-#u'http://player.youku.com/player.php/sid/XMTgzNDI0MjkzNg==/v.swf'
-#]
+
+[
+'https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&amp;v=20161117&amp;vid=n0022y6dfv7&amp;auto=0',
+'https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&amp;v=20161117&amp;vid=n0022y6dfv7&amp;auto=0'
+]
