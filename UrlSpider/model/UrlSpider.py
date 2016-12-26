@@ -9,7 +9,7 @@
 #   操作：python UrlSpider.py
 #   功能：指定任务表，读取url，多线程采集
 #         表结构(id, ip, lon_gd, lat_gd, datetime, flag)
-#        接口已经失效 采用数据库批量插入优化等表结构优化
+#        采用数据库批量插入优化等表结构优化
 #-------------------------------------------------------------------------
 import re ,os ,sys ,time ,json ,random ,MySQLdb ,requesocks ,threading，requests
 
