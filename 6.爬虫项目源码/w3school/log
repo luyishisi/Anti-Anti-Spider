@@ -1,0 +1,98 @@
+2016-06-20 15:21:09+0800 [scrapy] INFO: Scrapy 0.24.6 started (bot: w3school)
+2016-06-20 15:21:09+0800 [scrapy] INFO: Optional features available: ssl, http11, django
+2016-06-20 15:21:09+0800 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'w3school.spiders', 'SPIDER_MODULES': ['w3school.spiders'], 'LOG_FILE': 'log', 'BOT_NAME': 'w3school'}
+2016-06-20 15:21:09+0800 [scrapy] INFO: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2016-06-20 15:21:09+0800 [scrapy] INFO: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, MetaRefreshMiddleware, HttpCompressionMiddleware, RedirectMiddleware, CookiesMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2016-06-20 15:21:09+0800 [scrapy] INFO: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2016-06-20 15:21:09+0800 [scrapy] INFO: Enabled item pipelines: W3SchoolPipeline
+2016-06-20 15:21:09+0800 [w3school] INFO: Spider opened
+2016-06-20 15:21:09+0800 [w3school] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-06-20 15:21:09+0800 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6027
+2016-06-20 15:21:09+0800 [scrapy] DEBUG: Web service listening on 127.0.0.1:6084
+2016-06-20 15:21:10+0800 [w3school] DEBUG: Crawled (200) <GET http://www.w3school.com.cn/xml/xml_syntax.asp> (referer: None)
+2016-06-20 15:21:10+0800 [scrapy] NOLEVEL: Appending item...
+2016-06-20 15:21:10+0800 [scrapy] NOLEVEL: Appending item...
+2016-06-20 15:21:10+0800 [scrapy] NOLEVEL: Appending item...
+2016-06-20 15:21:10+0800 [scrapy] NOLEVEL: Appending item...
+2016-06-20 15:21:10+0800 [scrapy] NOLEVEL: Appending item...
+2016-06-20 15:21:10+0800 [scrapy] NOLEVEL: Appending item...
+2016-06-20 15:21:10+0800 [scrapy] NOLEVEL: Appending item...
+2016-06-20 15:21:10+0800 [scrapy] NOLEVEL: Appending item...
+2016-06-20 15:21:10+0800 [scrapy] NOLEVEL: Appending item...
+2016-06-20 15:21:10+0800 [scrapy] NOLEVEL: Appending item...
+2016-06-20 15:21:10+0800 [scrapy] NOLEVEL: Appending item...
+2016-06-20 15:21:10+0800 [scrapy] NOLEVEL: Appending item...
+2016-06-20 15:21:10+0800 [scrapy] NOLEVEL: Appending item...
+2016-06-20 15:21:10+0800 [scrapy] NOLEVEL: Append done.
+2016-06-20 15:21:10+0800 [w3school] DEBUG: Scraped from <200 http://www.w3school.com.cn/xml/xml_syntax.asp>
+	{'desc': ['XML \xe6\x95\x99\xe7\xa8\x8b'],
+	 'link': ['/xml/index.asp'],
+	 'title': ['XML \xe6\x95\x99\xe7\xa8\x8b']}
+2016-06-20 15:21:10+0800 [w3school] DEBUG: Scraped from <200 http://www.w3school.com.cn/xml/xml_syntax.asp>
+	{'desc': ['XML \xe7\xae\x80\xe4\xbb\x8b'],
+	 'link': ['/xml/xml_intro.asp'],
+	 'title': ['XML \xe7\xae\x80\xe4\xbb\x8b']}
+2016-06-20 15:21:10+0800 [w3school] DEBUG: Scraped from <200 http://www.w3school.com.cn/xml/xml_syntax.asp>
+	{'desc': ['XML \xe7\x9a\x84\xe7\x94\xa8\xe9\x80\x94'],
+	 'link': ['/xml/xml_usedfor.asp'],
+	 'title': ['XML \xe7\x94\xa8\xe9\x80\x94']}
+2016-06-20 15:21:10+0800 [w3school] DEBUG: Scraped from <200 http://www.w3school.com.cn/xml/xml_syntax.asp>
+	{'desc': ['XML \xe6\xa0\x91\xe7\xbb\x93\xe6\x9e\x84'],
+	 'link': ['/xml/xml_tree.asp'],
+	 'title': ['XML \xe6\xa0\x91\xe7\xbb\x93\xe6\x9e\x84']}
+2016-06-20 15:21:10+0800 [w3school] DEBUG: Scraped from <200 http://www.w3school.com.cn/xml/xml_syntax.asp>
+	{'desc': ['XML \xe8\xaf\xad\xe6\xb3\x95\xe8\xa7\x84\xe5\x88\x99'],
+	 'link': ['/xml/xml_syntax.asp'],
+	 'title': ['XML \xe8\xaf\xad\xe6\xb3\x95']}
+2016-06-20 15:21:10+0800 [w3school] DEBUG: Scraped from <200 http://www.w3school.com.cn/xml/xml_syntax.asp>
+	{'desc': ['XML \xe5\x85\x83\xe7\xb4\xa0'],
+	 'link': ['/xml/xml_elements.asp'],
+	 'title': ['XML \xe5\x85\x83\xe7\xb4\xa0']}
+2016-06-20 15:21:10+0800 [w3school] DEBUG: Scraped from <200 http://www.w3school.com.cn/xml/xml_syntax.asp>
+	{'desc': ['XML \xe5\xb1\x9e\xe6\x80\xa7'],
+	 'link': ['/xml/xml_attributes.asp'],
+	 'title': ['XML \xe5\xb1\x9e\xe6\x80\xa7']}
+2016-06-20 15:21:10+0800 [w3school] DEBUG: Scraped from <200 http://www.w3school.com.cn/xml/xml_syntax.asp>
+	{'desc': ['XML \xe9\xaa\x8c\xe8\xaf\x81'],
+	 'link': ['/xml/xml_dtd.asp'],
+	 'title': ['XML \xe9\xaa\x8c\xe8\xaf\x81']}
+2016-06-20 15:21:10+0800 [w3school] DEBUG: Scraped from <200 http://www.w3school.com.cn/xml/xml_syntax.asp>
+	{'desc': ['XML \xe9\xaa\x8c\xe8\xaf\x81\xe5\x99\xa8'],
+	 'link': ['/xml/xml_validator.asp'],
+	 'title': ['XML \xe9\xaa\x8c\xe8\xaf\x81\xe5\x99\xa8']}
+2016-06-20 15:21:10+0800 [w3school] DEBUG: Scraped from <200 http://www.w3school.com.cn/xml/xml_syntax.asp>
+	{'desc': ['XML \xe6\xb5\x8f\xe8\xa7\x88\xe5\x99\xa8\xe6\x94\xaf\xe6\x8c\x81'],
+	 'link': ['/xml/xml_browsers.asp'],
+	 'title': ['XML \xe6\xb5\x8f\xe8\xa7\x88\xe5\x99\xa8']}
+2016-06-20 15:21:10+0800 [w3school] DEBUG: Scraped from <200 http://www.w3school.com.cn/xml/xml_syntax.asp>
+	{'desc': ['\xe6\x9f\xa5\xe7\x9c\x8b XML \xe6\x96\x87\xe4\xbb\xb6'],
+	 'link': ['/xml/xml_view.asp'],
+	 'title': ['XML \xe6\x9f\xa5\xe7\x9c\x8b']}
+2016-06-20 15:21:10+0800 [w3school] DEBUG: Scraped from <200 http://www.w3school.com.cn/xml/xml_syntax.asp>
+	{'desc': ['\xe4\xbd\xbf\xe7\x94\xa8 CSS \xe6\x98\xbe\xe7\xa4\xba XML'],
+	 'link': ['/xml/xml_display.asp'],
+	 'title': ['XML CSS']}
+2016-06-20 15:21:10+0800 [w3school] DEBUG: Scraped from <200 http://www.w3school.com.cn/xml/xml_syntax.asp>
+	{'desc': ['\xe4\xbd\xbf\xe7\x94\xa8 XSLT \xe6\x98\xbe\xe7\xa4\xba XML'],
+	 'link': ['/xml/xml_xsl.asp'],
+	 'title': ['XML XSLT']}
+2016-06-20 15:21:10+0800 [w3school] INFO: Closing spider (finished)
+2016-06-20 15:21:10+0800 [w3school] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 236,
+	 'downloader/request_count': 1,
+	 'downloader/request_method_count/GET': 1,
+	 'downloader/response_bytes': 11551,
+	 'downloader/response_count': 1,
+	 'downloader/response_status_count/200': 1,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2016, 6, 20, 7, 21, 10, 576700),
+	 'item_scraped_count': 13,
+	 'log_count/DEBUG': 16,
+	 'log_count/INFO': 21,
+	 'response_received_count': 1,
+	 'scheduler/dequeued': 1,
+	 'scheduler/dequeued/memory': 1,
+	 'scheduler/enqueued': 1,
+	 'scheduler/enqueued/memory': 1,
+	 'start_time': datetime.datetime(2016, 6, 20, 7, 21, 9, 526401)}
+2016-06-20 15:21:10+0800 [w3school] INFO: Spider closed (finished)

@@ -1,0 +1,358 @@
+http://gs.amac.org.cn/amac-infodisc/res/pof/manager/index.html
+begin
+Status: success
+<!DOCTYPE html><html><head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私募基金管理人综合查询 - 中国基金业协会</title>
+    <link rel="stylesheet" href="../../common/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../../common/css/unit.css" type="text/css">
+    <link rel="stylesheet" href="../../common/css/grid.css" type="text/css">
+    <link rel="stylesheet" href="../../common/css/global.css" type="text/css">
+    <link rel="stylesheet" href="../../common/css/module.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../../lib/dataTable/css/jquery.dataTables.css">
+    <style type="text/css">
+    	.w100 {
+		    width: 100px;
+		}
+		.controls ul li {
+		    cursor :pointer;
+		    line-height : 180%;
+		}
+		.controls ul li:hover {
+		    width:100%;
+		    background: #eee;
+		}
+		#controls div {
+		    display:inline-block;
+		}
+	    #controls div {
+		    *display:inline;
+		}
+		.a1{
+			color: #173bf4;
+			/*font-size:1.1em;*/
+		}
+		#aa table tr td{
+            width:30%;
+        }
+        .ui-dialog .ui-dialog-buttonpane{
+           height:40px;
+        }
+        .controls a:hover {
+	       text-decoration: none !important;
+	       background-color:#dbdbdb; 
+        }
+        .active:hover {
+           background-color:#c3d7f3 !important;
+        }
+        #aa a {
+           color:blue;
+           text-decoration: none !important;
+        }
+        #managerList_length {
+           margin-left: 10px;
+           margin-top: 6px;
+        }
+        #managerList_length select {
+           width:70px;
+        }
+    </style>
+    <script type="text/javascript" language="javascript" src="../../lib/dataTable/js/jquery.js"></script>
+    <script type="text/javascript" language="javascript" src="../../lib/jquery/plugins/jquery-ui-1.11.4/external/jquery/jquery.js"></script>
+	<script type="text/javascript" language="javascript" src="../../lib/dataTable/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" language="javascript" src="../../lib/dataTable/js/ellipses.js"></script>
+	<!--  
+	<script type="text/javascript" language="javascript" src="../../../lib/dataTable/js/shCore.js"></script>
+	-->
+	<link rel="stylesheet" type="text/css" href="../../lib/jquery/plugins/artDialog4/skins/blue.css">
+	<script type="text/javascript" language="javascript" src="../../lib/jquery/plugins/artDialog4/artDialog.js"></script>
+	<script type="text/javascript" language="javascript" src="../../lib/jquery/plugins/artDialog4/jquery.artDialog.js"></script>
+	<script type="text/javascript" language="javascript" src="../../lib/jquery/plugins/artDialog4/plugins/iframeTools.js"></script>
+	<script type="text/javascript" language="javascript" src="../../lib/jquery/plugins/jquery-ui-1.11.4/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../lib/jquery/plugins/jquery-ui-1.11.4/jquery-ui.css">
+    <script type="text/javascript" language="javascript" src="../../lib/datepicker/WdatePicker.js"></script><link href="../../lib/datepicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" language="javascript" src="js/index.js"></script>
+	<script type="text/javascript" language="javascript" src="../../common/js/xdate.js"></script>
+    <!--[if lt IE 8]>  
+	<script type="text/javascript" language="javascript" src="../../common/js/json2.js"></script>
+	<![endif]-->
+	
+	<script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script> 
+    <script src="www/js/echarts.js"></script>
+    <script src="asset/js/codemirror.js"></script>
+	
+</head>
+<body class="g-container" style="">
+    <div>
+        <!-- header start -->
+        <div class="g-header clearfix">
+            <a href="/" class="logo pull-left"><img src="../../common/images/logo.png" alt="中国证券投资基金业协会"></a>
+            <div class="info pull-right">
+                <span id="IE67" style="display: none;"><span class="fontSpace">组织机构代码</span>：71783348<br></span>
+			    <span id="otherBrowser"><span class="fontSpace">组织机构代</span>码：71783348<br></span>
+               	 社会团体法人登记证书：社证字第4951号
+            </div>
+        </div>
+        <!-- header end -->
+
+        <!-- body start -->
+        <div class="g-body">
+            <!-- 私募基金管理人公示 start -->
+            <div class="m-manager-list">
+                <h3 class="text-center font-xbig text-bold mb30">私募基金管理人综合查询
+                <!--  
+                  <input type="button" onclick="javascript:window.open('baidumap.html');" class="btn btn-primary" value="地图中显示" style="width:100px;float:right;"/>
+                -->
+                <a href="baidumap.html" target="_blank" class="btn-map" style="font-weight:normal;font-size:14px;text-indent:0px;">区域分布图</a>
+                </h3>
+                
+                <p class="mb15">
+                  <a href="javascript:void(0);" class="text-danger ml15" onclick="openAMACInfo();">&lt;&lt;中国证券投资基金业协会提示&gt;&gt;</a>
+                  
+                </p>
+                <div style="display:none;" id="tooggleAMACInfo"><p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;私募基金管理人规模类、提示类公示信息均来源于中国证券投资基金业协会已登记私募基金管理人提供的信息，基金管理人已书面承诺所有填报信息真实、准确、完整，<br>并承诺承担所有相关法律责任。</p>
+ <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国证券投资基金业协会对私募基金登记备案信息不做实质性事前审查。公示信息不构成对私募基金管理人投资管理能力、持续合规情况的认可，不作为基金资产安全的保证。</p>
+ <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;投资者进行私募基金投资时须谨慎判断和识别风险。</p>
+ <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;社会公众若发现私募基金管理人分类公示信息中存在任何虚假或不实内容，请将相关实名举报或投诉情况发送至邮箱：<a class="a1" style="color: #173bf4;" href="mailto:tousu@amac.org.cn">tousu@amac.org.cn</a>，或邮寄至中国证券投资基金业协会<br>（地址：<font class="a1">北京市西城区金融大街20号交通银行大厦B座9层，邮编100033，请标明“法律部收”</font>）。详见协会官网“投资者教育”栏目中“投诉须知”。</p>
+ <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列入分类公示的私募基金管理人如对分类公示有异议，请发函至邮箱：<a class="a1" style="color: #173bf4;" href="mailto:pf@amac.org.cn">pf@amac.org.cn</a>。</p>
+ <br></div>
+                
+                <!-- 查询条件区域 start -->
+                <div class="m-search-bar clearfix mb15" style="margin-bottom:0px;">
+                
+                <a href="javascript:openMap();" class="btn-register-city">按注册地查询</a>
+                <form name="manager-list-form" action="" id="managerform" class="form-horizontal">
+                <input type="hidden" id="fundType">
+                <input type="hidden" id="remindItem">
+                <input type="hidden" id="faithInfo">
+                <input type="hidden" id="fundScaleFrom">
+                <input type="hidden" id="primaryInvestType">
+                        <div class="control-group">
+                            <div class="control-label w100">关键字：</div>
+                            <div class="controls">
+                                <input id="keyword" type="text" class="input-keyword watermark" style="" value="请输入登记编号/私募基金管理人名称或法定代表人/执行事务合伙人（委派代表）姓名" onfocus="javascript:keywordOnFocus(this);" onblur="javascript:keywordOnBlur(this);">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="control-label w100">成立时间：</div>
+                            <div class="controls">
+                                <a href="javascript:void(0);" onclick="javascript:choosePeriods(this);" class="btn-link mr10" value="1">最近三个月</a>
+                                <a href="javascript:void(0);" onclick="javascript:choosePeriods(this);" class="btn-link mr10" value="2">最近一年</a>
+                                <input type="text" id="foundBeginDate" class="datepicker" value="" onclick="WdatePicker({maxDate:'%y-%M-%d',dateFmt:'yyyy-MM-dd'})">&nbsp;-&nbsp;
+                                <input type="text" id="foundEndDate" class="datepicker" value="" onclick="WdatePicker({maxDate:'%y-%M-%d',dateFmt:'yyyy-MM-dd'})">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="control-label w100">登记时间：</div>
+                            <div class="controls">
+                                <a href="javascript:void(0);" onclick="javascript:chooseCheckTime(this);" value="1" class="btn-link mr10">最近一月</a>
+                                <a href="javascript:void(0);" onclick="javascript:chooseCheckTime(this);" value="2" class="btn-link mr10">最近三个月</a>
+                                <input type="text" id="checkBeginDate" class="datepicker" value="" onclick="WdatePicker({maxDate:'%y-%M-%d',dateFmt:'yyyy-MM-dd'})">&nbsp;-&nbsp;
+                                <input type="text" id="checkEndDate" class="datepicker" value="" onclick="WdatePicker({maxDate:'%y-%M-%d',dateFmt:'yyyy-MM-dd'})">
+                            </div>
+                        </div>
+                        
+<!--                         <div class="control-group">
+                            <div class="control-label w100"><img src="../../common/images/icon_tips.jpg" style="vertical-align:middle;" onmouseover="javascript:show(this,'fundTypeHint');" onmouseout="hide(this,'fundTypeHint')"/>基金规模：</div>
+                              <div class="m-modal" id="fundTypeHint" style="display:none;position:absolute;width:650px;">
+		                        <div class="modal-title">基金规模</div>
+		                        <div class="modal-content">
+			                       <p>1、 各区间内私募基金管理人以在中国证券投资基金业协会的登记时间顺序进行排列；</p>
+							       <p>2、 基金规模以管理人在登记备案系统中填报的认缴规模为准；</p>
+							       <p>3、 基金指正在运作的基金，不包括已经清盘的基金；</p>
+							       <p>4、 根据私募基金管理人所管理基金的不同类型，规模类公示选取不同的划分标准，管理规模在区间下限以下的管理人不列入分类公示范围；</p>
+							       <p>5、 管理人管理不同类型私募基金的，根据所管理的不同类型基金规模分别进行统计；</p>
+							       <p>6、 其他私募基金主要是指从事艺术品、商品等投资的私募基金； </p>
+							       <p>7、 区间划分标准将根据行业发展情况进行动态调整 。</p>
+		                        </div>
+                              </div>
+                            <div class="controls" id="controls">
+                                <div onmouseover="javascript:chooseFundType(this,'showFundScale1');" onmouseout="hide(this,'showFundScale1');" value="私募证券自主发行">
+                                    <a href="javascript:void(0);" class="btn-link mr10" value="私募证券基金(自主发行)" onclick="removeFundType(this);">私募证券基金(自主发行)</a>
+	                                <ul id="showFundScale1" style="display:none;background-color:rgb(222,230,248);position:absolute;">
+	                                  <li onclick="javascript:chooseFundScale(this,'','');">全部</li>
+	                                  <li onclick="javascript:chooseFundScale(this,'500000','');">50 亿以上</li>
+	                                  <li onclick="javascript:chooseFundScale(this,'200000','500000');">20-50 亿</li>
+	                                  <li onclick="javascript:chooseFundScale(this,'100000','200000');">10-20 亿</li>
+	                                  <li onclick="javascript:chooseFundScale(this,'10000','100000');">1-10 亿</li>
+	                                  <li onclick="javascript:chooseFundScale(this,'0','10000');">0-1 亿</li>
+	                                </ul>
+                                </div>
+                                
+                                <div onmouseover="javascript:chooseFundType(this,'showFundScale2');" onmouseout="hide(this,'showFundScale2')" value="私募证券顾问管理">
+                                <a href="javascript:void(0);" class="btn-link mr10" value="私募证券基金(顾问管理)" onclick="removeFundType(this);">私募证券基金(顾问管理)</a>
+                                <ul id="showFundScale2" style="display:none;background-color:rgb(222,230,248);position:absolute;">
+                                  <li onclick="javascript:chooseFundScale(this,'','');">全部</li>
+                                  <li onclick="javascript:chooseFundScale(this,'500000','');">50 亿以上</li>
+                                  <li onclick="javascript:chooseFundScale(this,'200000','500000');">20-50 亿</li>
+                                  <li onclick="javascript:chooseFundScale(this,'100000','200000');">10-20 亿</li>
+                                  <li onclick="javascript:chooseFundScale(this,'10000','100000');">1-10 亿</li>
+                                  <li onclick="javascript:chooseFundScale(this,'0','10000');">0-1 亿</li>
+                                </ul>
+                                </div>
+                                
+                                <div onmouseover="javascript:chooseFundType(this,'showFundScale3');" onmouseout="hide(this,'showFundScale3')" value="私募股权">
+                                <a href="javascript:void(0);" class="btn-link mr10" value="私募股权基金" onclick="removeFundType(this);">私募股权基金</a>
+                                 <ul id="showFundScale3" style="display:none;background-color:rgb(222,230,248);position:absolute;">
+                                  <li onclick="javascript:chooseFundScale(this,'','');">全部</li>
+                                  <li onclick="javascript:chooseFundScale(this,'1000000','');">100 亿以上</li>
+                                  <li onclick="javascript:chooseFundScale(this,'500000','1000000');">50-100 亿</li>
+                                  <li onclick="javascript:chooseFundScale(this,'200000','500000');">20-50 亿</li>
+                                  <li onclick="javascript:chooseFundScale(this,'0','200000');">0-20 亿</li>
+                                </ul>
+                                
+                                </div>
+                                
+                                <div onmouseover="javascript:chooseFundType(this,'showFundScale4');" onmouseout="hide(this,'showFundScale4')" value="创业投资">
+                                <a href="javascript:void(0);" class="btn-link mr10" value="创业投资基金" onclick="removeFundType(this);">创业投资基金</a>
+                                <ul id="showFundScale4" style="display:none;background-color:rgb(222,230,248);position:absolute;">
+                                  <li onclick="javascript:chooseFundScale(this,'','');">全部</li>
+                                  <li onclick="javascript:chooseFundScale(this,'100000','');">10 亿以上</li>
+                                  <li onclick="javascript:chooseFundScale(this,'50000','100000');">5-10 亿</li>
+                                  <li onclick="javascript:chooseFundScale(this,'20000','50000');">2-5 亿</li>
+                                  <li onclick="javascript:chooseFundScale(this,'0','20000');">0-2 亿</li>
+                                </ul>
+                                
+                                </div>
+                                
+                                <div onmouseover="javascript:chooseFundType(this,'showFundScale5');" onmouseout="hide(this,'showFundScale5')" value="其它私募">
+                                <a href="javascript:void(0);" class="btn-link mr10" value="其他私募基金" onclick="removeFundType(this);">其他私募基金</a>
+                                <ul id="showFundScale5" style="display:none;background-color:rgb(222,230,248);position:absolute;">
+                                  <li onclick="javascript:chooseFundScale(this,'','');">全部</li>
+                                  <li onclick="javascript:chooseFundScale(this,'100000','');">10 亿以上</li>
+                                  <li onclick="javascript:chooseFundScale(this,'50000','100000');">5-10 亿</li>
+                                  <li onclick="javascript:chooseFundScale(this,'20000','50000');">2-5 亿</li>
+                                  <li onclick="javascript:chooseFundScale(this,'0','20000');">0-2 亿</li>
+                                </ul>
+                                
+                                </div>
+                            </div>
+                        </div> -->
+                        
+                        <div class="control-group">
+                            <div class="control-label w100">提示事项：</div>
+                            <div class="controls">
+                                <a href="javascript:void(0);" onclick="javascript:chooseRemindItem(this);" value="manageScalaZero" class="btn-link mr10">管理规模为零</a>
+                                <a href="javascript:void(0);" onclick="javascript:chooseRemindItem(this);" value="oneYearManageScalaZero" class="btn-link mr10">登记一年以上管理规模为零</a>
+                                <a href="javascript:void(0);" onclick="javascript:chooseRemindItem(this);" value="handInUnderRegister25P" class="btn-link mr10">管理人实缴资本低于注册资本25%</a>
+                                <a href="javascript:void(0);" onclick="javascript:chooseRemindItem(this);" value="handInLe100W" class="btn-link mr10">管理人实缴资本低于100万</a>
+                                <a href="javascript:void(0);" onclick="javascript:chooseRemindItem(this);" value="notNormalLiquidation" class="btn-link mr10">非正常清盘</a><br>
+                                <a href="javascript:void(0);" style="margin-top:8px;" onclick="javascript:chooseRemindItem(this);" value="managerHasNotCertificate" class="btn-link mr10">高管人员无证券投资基金从业资格</a>
+                                <a href="javascript:void(0);" style="margin-top:8px;" onclick="javascript:chooseRemindItem(this);" value="none" class="btn-link mr10">无提示事项</a>
+                            </div>
+                        </div><br><br>
+                        
+                        <div class="control-group">
+                            <div class="control-label w100">基金主要类别：</div>
+                            <div class="controls">
+                                <a href="javascript:void(0);" onclick="javascript:choosePrimaryInvestType(this);" value="证券投资基金" class="btn-link mr10">证券投资基金</a>
+                                <a href="javascript:void(0);" onclick="javascript:choosePrimaryInvestType(this);" value="股权投资基金" class="btn-link mr10">股权投资基金</a>
+                                <a href="javascript:void(0);" onclick="javascript:choosePrimaryInvestType(this);" value="创业投资基金" class="btn-link mr10">创业投资基金</a>
+                                <a href="javascript:void(0);" onclick="javascript:choosePrimaryInvestType(this);" value="其他投资基金" class="btn-link mr10">其他投资基金</a>
+                            </div>
+                        </div>
+                        
+<!--                         <div class="control-group">
+                            <div class="control-label w100">已选条件：</div>
+                            <div class="controls" id="selectedConditions" style="word-wrap:break-word;word-break:break-all;">
+                                <a style="vertical-align:middle;border:1px dotted #ccc;padding:2px;"><span style="color:red;">高管人员无证券投资基金从业资格</span><img src="../../common/images/delete.png" style="cursor:pointer;margin-left:6px;"/></a>
+                            </div>
+                        </div> -->
+                        
+<!--                         <div class="control-group">
+                            <div class="control-label w100"><img src="../../common/images/icon_tips.jpg" style="vertical-align:middle;" onmouseover="javascript:show(this,'faithInfoHint');" onmouseout="hide(this,'faithInfoHint')"/>诚信信息：</div>
+                            <div id="faithInfoHint" class="m-modal" style="display:none;position:absolute;width:700px;z-index:10000;">
+                               <div class="modal-title">诚信信息</div>
+		                        <div class="modal-content">
+			                           <p>1、此类公示以私募基金管理人在中国证券投资基金业协会的登记时间顺序进行排列；</p>
+                                       <p>2、不良诚信记录主要包括私募基金管理人、实际控制人、相关高管人员受到中国证监会行政处罚或者中国证券投资基金业协会纪律处分，本公示提供证监会信息公开和中国证券投资基金业协会纪律处分的查询链接；</p>
+                                       <p>3、列入虚假填报、重大遗漏、违反三条底线的私募基金管理人，如已经完成整改，则不再列入此类公示。</p>
+		                        </div>
+                            </div>
+                            <div class="controls">
+                                <a href="javascript:void(0);" onclick="javascript:chooseFaithInfo(this);" value="shamStatement" class="btn-link mr10">虚假填报</a>
+                                <a href="javascript:void(0);" onclick="javascript:chooseFaithInfo(this);" value="materRialOmission" class="btn-link mr10">重大遗漏</a>
+                                <a href="javascript:void(0);" onclick="javascript:chooseFaithInfo(this);" value="eightLine" class="btn-link mr10">违反八条底线</a>
+                                <a href="javascript:void(0);" onclick="javascript:chooseFaithInfo(this);" value="badCredit" class="btn-link mr10">相关主体存在不良诚信记录</a>
+                            </div>
+                        </div> -->
+                        
+                        <div class="control-group text-right">
+                            <input type="button" class="btn btn-primary" value="查询" onclick="reload();">
+                            <!-- <input type="button" class="btn btn-primary" value="查询" id="reload"/> -->
+                            <input type="button" class="btn btn-clear" value="清空条件" id="reset">
+                            <input type="button" class="btn btn-primary" style="padding:0px;" value="分类公示" onclick="gotoManagerList();">
+                        </div>
+                    </form>    
+                </div>
+                <!-- 查询条件区域 end -->
+
+                <!-- 说明 -->
+                <div class="m-pager">
+                    <span class="label-tips text-mult pull-left text-danger">注：带&nbsp;<span class="text-danger">*</span>&nbsp;号的机构目前没有正在管理的私募基金</span>
+                    <br>
+                </div> 
+                <!-- 数据表格 start -->
+                <div id="managerList_wrapper" class="dataTables_wrapper no-footer"><div class="top"></div><table id="managerList" class="table table-center dataTable no-footer" role="grid" aria-describedby="managerList_info" style="width: 1230px;">
+                    <colgroup>
+                        <col width="7%">
+                        <col width="20%">
+                        <col width="17%">
+                        <col width="11%">
+                        <col width="11%">
+                        <col width="11%">
+                        <col width="11%">
+                        <col width="11%">
+                    </colgroup>
+                    <thead>
+                        <tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 50px;">编号</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 213px;">私募基金管理人名称</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 175px;">法定代表人/执行事务合伙人(委派代表)姓名</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 100px;">基金主要类别</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 101px;">注册地</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 101px;">登记编号</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 101px;">成立时间</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 101px;">登记时间</th></tr>
+                    </thead>
+                <tbody><tr role="row" class="odd"><td>1</td><td><a href="138.html" target="_blank">平安道远投资管理（上海）有限公司</a></td><td>杨晓华</td><td>证券投资基金</td><td>上海市</td><td>P1000182</td><td>2011-03-15</td><td>2014-03-17</td></tr><tr role="row" class="even"><td>2</td><td><a href="194.html" target="_blank">上海重阳投资管理股份有限公司</a></td><td>裘国根</td><td>证券投资基金</td><td>上海市</td><td>P1000265</td><td>2009-06-26</td><td>2014-03-17</td></tr><tr role="row" class="odd"><td>3</td><td><a href="211.html" target="_blank">上海景林资产管理有限公司</a></td><td>蒋锦志</td><td>证券投资基金</td><td>上海市</td><td>P1000267</td><td>2012-06-06</td><td>2014-03-17</td></tr><tr role="row" class="even"><td>4</td><td><a href="172.html" target="_blank">富舜资产管理（上海）有限公司</a></td><td>周楠</td><td>证券投资基金</td><td>上海市</td><td>P1000268</td><td>2012-02-10</td><td>2014-03-17</td></tr><tr role="row" class="odd"><td>5</td><td><a href="721.html" target="_blank">深圳民森投资有限公司</a></td><td>蔡明</td><td>证券投资基金</td><td>深圳市</td><td>P1000269</td><td>2007-04-05</td><td>2014-03-17</td></tr><tr role="row" class="even"><td>6</td><td><a href="578.html" target="_blank">上海尚雅投资管理有限公司</a></td><td>石波</td><td>证券投资基金</td><td>上海市</td><td>P1000271</td><td>2007-08-01</td><td>2014-03-17</td></tr><tr role="row" class="odd"><td>7</td><td><a href="504.html" target="_blank">北京润晖资产管理有限公司</a></td><td>闵昱</td><td>证券投资基金</td><td>北京市</td><td>P1000276</td><td>2010-05-28</td><td>2014-03-17</td></tr><tr role="row" class="even"><td>8</td><td><a href="580.html" target="_blank">新沃股权投资基金管理（天津）有限公司</a></td><td>朱灿</td><td>证券投资基金</td><td>天津市</td><td>P1000287</td><td>2011-08-05</td><td>2014-03-17</td></tr><tr role="row" class="odd"><td>9</td><td><a href="446.html" target="_blank">鼎晖股权投资管理（天津）有限公司</a></td><td>郭力</td><td>股权投资基金</td><td>天津市</td><td>P1000301</td><td>2008-05-22</td><td>2014-03-17</td></tr><tr role="row" class="even"><td>10</td><td><a href="308.html" target="_blank">广东中科招商创业投资管理有限责任公司</a></td><td>单祥双</td><td>股权投资基金</td><td>广东省</td><td>P1000302</td><td>2009-07-15</td><td>2014-03-17</td></tr><tr role="row" class="odd"><td>11</td><td><a href="350.html" target="_blank">上海复星创富投资管理股份有限公司</a></td><td>唐斌</td><td>股权投资基金</td><td>上海市</td><td>P1000303</td><td>2007-04-28</td><td>2014-03-17</td></tr><tr role="row" class="even"><td>12</td><td><a href="158.html" target="_blank">上海耀之资产管理中心（有限合伙）</a></td><td>王小坚</td><td>证券投资基金</td><td>上海市</td><td>P1000318</td><td>2011-07-01</td><td>2014-03-17</td></tr><tr role="row" class="odd"><td>13</td><td><a href="224.html" target="_blank">深圳东方港湾投资管理股份有限公司</a></td><td>但斌</td><td>证券投资基金</td><td>深圳市</td><td>P1000320</td><td>2004-03-23</td><td>2014-03-17</td></tr><tr role="row" class="even"><td>14</td><td><a href="196.html" target="_blank">上海国富投资管理有限公司</a></td><td>陈海峰</td><td>证券投资基金</td><td>上海市</td><td>P1000321</td><td>2007-04-29</td><td>2014-03-17</td></tr><tr role="row" class="odd"><td>15</td><td><a href="530.html" target="_blank">上海世诚投资管理有限公司</a></td><td>陈家琳</td><td>证券投资基金</td><td>上海市</td><td>P1000323</td><td>2007-10-10</td><td>2014-03-17</td></tr><tr role="row" class="even"><td>16</td><td><a href="292.html" target="_blank">深圳中睿合银投资管理有限公司</a></td><td>刘睿</td><td>证券投资基金</td><td>深圳市</td><td>P1000326</td><td>2009-02-10</td><td>2014-03-17</td></tr><tr role="row" class="odd"><td>17</td><td><a href="458.html" target="_blank">上海万丰友方投资管理有限公司</a></td><td>朱晓兵</td><td>证券投资基金</td><td>上海市</td><td>P1000385</td><td>2003-12-12</td><td>2014-03-17</td></tr><tr role="row" class="even"><td>18</td><td><a href="195.html" target="_blank">深圳市翼虎投资管理有限公司</a></td><td>余定恒</td><td>证券投资基金</td><td>深圳市</td><td>P1000388</td><td>2006-11-10</td><td>2014-03-17</td></tr><tr role="row" class="odd"><td>19</td><td><a href="179.html" target="_blank">浙江思考投资管理股份有限公司</a></td><td>钱湘英</td><td>证券投资基金</td><td>浙江省</td><td>P1000391</td><td>2010-03-08</td><td>2014-03-17</td></tr><tr role="row" class="even"><td>20</td><td><a href="362.html" target="_blank">深圳市明曜投资管理有限公司</a></td><td>曾昭雄</td><td>证券投资基金</td><td>深圳市</td><td>P1000406</td><td>2012-02-28</td><td>2014-03-17</td></tr></tbody></table><div class="bottom"><div class="dataTables_info" id="managerList_info" role="status" aria-live="polite">共 17728 条记录，共887页</div><div class="dataTables_length" id="managerList_length"><label>显示 <select name="managerList_length" aria-controls="managerList" class=""><option value="20">20</option><option value="10">10</option><option value="50">50</option><option value="100">100</option></select> 条</label></div><div class="dataTables_paginate paging_ellipses" id="managerList_paginate"><a class="paginate_button first">首页</a><a class="paginate_button previous">上一页</a><span class="paginate_numbers"><a class="paginate_button paginate_number current" active="true" disabled="disabled">1</a><a class="paginate_button paginate_number">2</a><a class="paginate_button paginate_number">3</a><a class="paginate_button paginate_number">4</a><a class="paginate_button paginate_number">5</a><span class="paginate_ellipsis">...</span></span><a class="paginate_button next">下一页</a><a class="paginate_button last">末页</a><input style="width:30px;" type="text" name="goInput" id="goInput"><button class="btn-go"></button></div></div></div>
+                
+                </div> 
+                <!-- 数据表格 end -->
+            </div>
+            <!-- 私募基金管理人公示 end -->
+        </div>
+        <!-- body end -->
+		
+        <!-- footer start -->
+        <div class="g-footer" style="position:relative;">版权所有：中国证券投资基金业协会  京ICP备16045718号&nbsp;&nbsp;&nbsp;&nbsp;
+                                       浏览量：<span id="clickCount">16515950</span>
+        </div>
+        <!-- footer end -->
+
+
+
+<!--  中国地图开始-->
+  <div id="chinamap" style="overflow: hidden; display: none;" title="私募基金管理人综合查询-按注册地查询"><iframe name="childMap" src="chinamap.html" width="100%" height="100%" scrolling="no"></iframe></div>
+    <script>
+    $(function() {
+  	  $('#aa').css({'position':'absolute', 'left':'140px', 'top': '430px'}); 
+    });
+      
+    function toListPage(province,city) {
+  	  if(city == undefined){
+  		  parent.window.location.href = "managerlistFormap.html?province="+province;
+  		  return;
+  	  }
+  	  parent.window.location.href = "managerlistFormap.html?province="+province+"&city="+city;
+    }
+    </script>
+<!--  中国地图结束--><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons ui-draggable" tabindex="-1" role="dialog" aria-describedby="dialog-title" aria-labelledby="ui-id-1" style="height: auto; width: 770px; top: 0px; left: 0px; display: block; z-index: 101;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle" style="color: rgb(204, 10, 34);"><span id="ui-id-1" class="ui-dialog-title">中国证券投资基金业协会提示</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="Close" style="display: none;"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">Close</span></button></div><div align="center" id="dialog-title" style="width: auto; min-height: 0px; max-height: none; height: 328px;" class="g-body ui-dialog-content ui-widget-content">
+	      <!-- 私募基金管理人公示 start -->
+	      <div class="m-manager-list">
+	          <br>
+	          <div id="noticeInfo">
+              	  <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;私募基金管理人规模类、提示类公示信息均来源于中国证券投资基金业协会已登记私募基金管理人提供的信息，基金管理人已书面承诺所有填报信息真实、准确、完整，并承诺承担所有相关法律责任。</p>
+				  <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国证券投资基金业协会对私募基金登记备案信息不做实质性事前审查。公示信息不构成对私募基金管理人投资管理能力、持续合规情况的认可，不作为基金资产安全的保证。</p>
+				  <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;投资者进行私募基金投资时须谨慎判断和识别风险。</p>
+				  <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;社会公众若发现私募基金管理人分类公示信息中存在任何虚假或不实内容，请将相关实名举报或投诉情况发送至邮箱：<a class="a1" style="color: #173bf4;" href="mailto:tousu@amac.org.cn">tousu@amac.org.cn</a>，或邮寄至中国证券投资基金业协会（地址：<font class="a1">北京市西城区金融大街20号交通银行大厦B座9层，邮编100033，请标明“法律部收”</font>）。详见协会官网“投资者教育”栏目中“投诉须知”。</p>
+				  <p class="mb15" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列入分类公示的私募基金管理人如对分类公示有异议，请发函至邮箱：<a class="a1" style="color: #173bf4;" href="mailto:pf@amac.org.cn">pf@amac.org.cn</a>。</p>
+	          </div>
+	          <div id="timeShow" style="font-size:20px;font-weight:800;color:#FF9900">2 S</div>
+	     </div>
+	    </div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" disabled="disabled" style="color: rgb(136, 136, 136);"><span class="ui-button-text">关闭</span></button></div></div></div><div class="ui-widget-overlay ui-front" style="z-index: 100;"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div style="display: none; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; cursor: move; opacity: 0; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial;"></div></body></html>

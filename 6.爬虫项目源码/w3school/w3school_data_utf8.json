@@ -1,0 +1,13 @@
+{"title": ["XML 教程"], "link": ["/xml/index.asp"], "desc": ["XML 教程"]}
+{"title": ["XML 简介"], "link": ["/xml/xml_intro.asp"], "desc": ["XML 简介"]}
+{"title": ["XML 用途"], "link": ["/xml/xml_usedfor.asp"], "desc": ["XML 的用途"]}
+{"title": ["XML 树结构"], "link": ["/xml/xml_tree.asp"], "desc": ["XML 树结构"]}
+{"title": ["XML 语法"], "link": ["/xml/xml_syntax.asp"], "desc": ["XML 语法规则"]}
+{"title": ["XML 元素"], "link": ["/xml/xml_elements.asp"], "desc": ["XML 元素"]}
+{"title": ["XML 属性"], "link": ["/xml/xml_attributes.asp"], "desc": ["XML 属性"]}
+{"title": ["XML 验证"], "link": ["/xml/xml_dtd.asp"], "desc": ["XML 验证"]}
+{"title": ["XML 验证器"], "link": ["/xml/xml_validator.asp"], "desc": ["XML 验证器"]}
+{"title": ["XML 浏览器"], "link": ["/xml/xml_browsers.asp"], "desc": ["XML 浏览器支持"]}
+{"title": ["XML 查看"], "link": ["/xml/xml_view.asp"], "desc": ["查看 XML 文件"]}
+{"title": ["XML CSS"], "link": ["/xml/xml_display.asp"], "desc": ["使用 CSS 显示 XML"]}
+{"title": ["XML XSLT"], "link": ["/xml/xml_xsl.asp"], "desc": ["使用 XSLT 显示 XML"]}

@@ -1,0 +1,108 @@
+victor
+
+
+Table of Contents
+─────────────────
+
+1 Tor 部署
+.. 1.1 环境准备
+..... 1.1.1 Linux
+..... 1.1.2 Python
+..... 1.1.3 Tor
+.. 1.2 python示例代码
+
+
+1 Tor 部署
+══════════
+
+1.1 环境准备
+──────
+
+  Linux 操作系统。Windows 部署没有验证。
+
+
+1.1.1 Linux
+╌╌╌╌╌╌╌╌╌╌╌
+
+  Linux 各种发行版本均可。以 Ubuntu 为例
+
+  ┌────
+  │ sudo apt-get install python-pip
+  └────
+
+
+1.1.2 Python
+╌╌╌╌╌╌╌╌╌╌╌╌
+
+  ┌────
+  │ sudo pip install requests
+  │ sudo pip install requesocks
+  └────
+
+
+1.1.3 Tor
+╌╌╌╌╌╌╌╌╌
+
+  ┌────
+  │ sudo apt-get install tor
+  │ sudo /etc/init.d/tor restart
+  └────
+  启动后socks监听9050端口。
+/
+  ┌────
+  │ tor --hash-password mypassword
+  └────
+  生成你的密码，之后编辑/etc/tor/torrc加上
+
+  ControlPort 9051
+
+  HashedControlPassword
+  16:872860B76453A77D60CA2BB8C1A7042072093276A3D701AD684053EC4C
+
+  让ControlPort监听9051端口，后边那个16:开头的hash就是上一步得到的。
+
+  ┌────
+  │ /etc/init.d/tor restart
+  └────
+  重启下tor。
+
+
+1.2 python示例代码 
+─────────
+
+  ┌────
+  │ import os
+  │ import requests
+  │ import requesocks
+  │ import time
+  │ 
+  │ url = 'http://api.ipify.org?format=json'
+  │ 
+  │ 
+  │ def getip_requests(url):                                                 
+  │     print "(+) Sending request with plain requests..."                   
+  │     r = requests.get(url)                                                
+  │     print "(+) IP is: " + r.text.replace("\n", "")                       
+  │ 
+  │ def getip_requesocks(url):
+  │     print "(+) Sending request with requesocks..."
+  │     session = requesocks.session()
+  │     session.proxies = {'http': 'socks5://127.0.0.1:9050',
+  │ 		       'https': 'socks5://127.0.0.1:9050'}
+  │     r = session.get(url)
+  │     print "(+) IP is: " + r.text.replace("\n", "")
+  │ 
+  │ 
+  │ def main():
+  │     print "Running tests..."
+  │     getip_requests(url)
+  │     getip_requesocks(url)
+  │     os.system("""(echo authenticate '"mypassword"'; echo signal newnym; echo \
+  │ quit) | nc localhost 9051""")
+  │     time.sleep(2)
+  │     getip_requesocks(url)
+  │ 
+  │ 
+  │ if __name__ == "__main__":
+  │     main()
+  └────

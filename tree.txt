@@ -1,0 +1,44 @@
+
+项目结构说明
+
+├── 1.验证码
+│   ├── num
+│   ├── PIL_EXAMPLES
+│   └── SVM
+├── 2.代理
+├── 3.代码模板
+│   ├── selenium模拟登陆
+│   ├── 百度地图可视化采集器
+│   ├── 多线程
+│   └── 聚焦爬虫
+├── 5.GHOST破解极验验证码
+├── 6.爬虫项目源码
+│   ├── 1.优酷网
+│   ├── 2.腾讯视频
+│   ├── 3.推特geo数据api采集
+│   ├── 4.mac--经纬信息
+│   ├── 5.yougetsignal-ip对应域名
+│   ├── 6.百度地图可视化采集器
+│   ├── 7.妹子图网
+│   ├── 86美女网
+│   ├── redis-prox
+│   ├── w3school
+│   └── xicidaili.com
+├── 7.IP更换技术
+│   ├── 1.代理
+│   │   ├── requests设置代理
+│   │   └── 采集代理网站
+│   │       ├── 国外代理网站gatherproxy
+│   │       ├──  米扑网
+│   │       └── 西刺
+│   ├── 2.tor_匿名网络
+├── Forge_head
+│   └── requests
+│   ├── forge_X_FORWARDED_FOR
+│   ├── get_page_printscreen
+│   ├── get_page_Source_Code
+├── selement
+│   ├── rewifi
+│   └── so_gold
+└── Webkit
+
