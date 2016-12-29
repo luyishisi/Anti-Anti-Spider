@@ -31,16 +31,22 @@ driver.get("https://s.m.taobao.com/h5?search-btn=&event_submit_do_new_search_auc
 # http://lbsyun.baidu.com/index.php?title=webapi/high-acc-ip
 
 print 'beging_1'
-driver.switchTo().frame("J_Search");
+#driver.switchTo().frame("J_Search");
 try:
-    elem = driver.find_element_by_xpath('//input[@search-placeholder]')#.click()
+    elem = driver.find_element_by_xpath('//input[@class="J_autocomplete"]').click()
 except Exception,e:
     print e
     #J_autocomplete
+time.sleep(5)
 name = ''+time.ctime().replace(' ','-')+'.png'
 driver.save_screenshot(name)
 print 'beging_2'
-elem.send_keys("皮裤女")
+try:
+    elem = driver.find_element_by_xpath('//input[@class="J_autocomplete"]')#.click()
+    elem.send_keys(u"皮裤女")
+    elem.send_keys(Keys.RETURN)
+except Exception,e:
+    print e
 print 'beging_3'
 #获取密码框并输入
 #print 'beging_2'
@@ -67,9 +73,11 @@ print 'beging_3'
 #     name = ''+time.ctime().replace(' ','-')+'.png'
 #     driver.save_screenshot(name)
 #保存页面截图和源码
-time.sleep(10)
+print driver.page_source.encode('utf-8')
+time.sleep(15)
 name = ''+time.ctime().replace(' ','-')+'.png'
 driver.save_screenshot(name)
+
 #f = open(name_html.encode('utf-8'),'w')
 #f.write(driver.page_source)
 #f.close()
@@ -77,7 +85,7 @@ driver.save_screenshot(name)
 #print driver.page_source.encode('utf8')
 
 print 'end'
-#driver.quit()
+driver.quit()
 #elem.clear()
 #time.sleep(10)
 driver.close()

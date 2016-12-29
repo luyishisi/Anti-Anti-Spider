@@ -1,31 +1,5 @@
-[INFO  - 2016-12-28T07:24:26.524Z] GhostDriver - Main - running on port 55018
-[INFO  - 2016-12-28T07:24:26.948Z] Session [aa093c00-ccce-11e6-a8df-c309e5da5472] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2016-12-28T07:24:26.949Z] Session [aa093c00-ccce-11e6-a8df-c309e5da5472] - page.customHeaders:  - {}
-[INFO  - 2016-12-28T07:24:26.949Z] Session [aa093c00-ccce-11e6-a8df-c309e5da5472] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-10.11 (El Capitan)-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2016-12-28T07:24:26.949Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: aa093c00-ccce-11e6-a8df-c309e5da5472
-[INFO  - 2016-12-28T07:29:26.517Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T08:17:03.348Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T08:22:03.337Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T08:27:03.326Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T08:32:03.316Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T08:37:03.305Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T08:42:03.295Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T08:47:03.285Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T08:52:03.275Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T08:57:03.264Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T09:02:03.254Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T09:07:03.243Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T09:12:03.234Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T09:17:03.224Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T09:22:03.213Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
- - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T09:18:47.051Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T09:23:47.041Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T09:14:47.387Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T09:19:47.374Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T09:21:30.138Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T09:23:52.733Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T09:08:42.564Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T09:13:42.555Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T09:18:42.544Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2016-12-28T09:23:42.533Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2016-12-28T15:46:26.573Z] GhostDriver - Main - running on port 50736
+[INFO  - 2016-12-28T15:46:27.086Z] Session [cb098ea0-cd14-11e6-8818-81815d0a1152] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-12-28T15:46:27.086Z] Session [cb098ea0-cd14-11e6-8818-81815d0a1152] - page.customHeaders:  - {}
+[INFO  - 2016-12-28T15:46:27.086Z] Session [cb098ea0-cd14-11e6-8818-81815d0a1152] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-10.11 (El Capitan)-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-12-28T15:46:27.086Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: cb098ea0-cd14-11e6-8818-81815d0a1152
