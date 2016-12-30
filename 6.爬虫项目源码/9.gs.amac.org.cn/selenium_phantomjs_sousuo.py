@@ -24,32 +24,28 @@ Type = sys.getfilesystemencoding()
 driver = webdriver.Chrome()
 #发起请求
 print 'beging_0'
-
-#driver.get("https://www.adidas.com.cn/")
-driver.get("https://www.adidas.com.cn/customer/account/login/")
+#driver.get("http://lbsyun.baidu.com/skins/MySkin/resources/iframs/heightAccApi.html")
+#driver.get("https://s.m.taobao.com/h5?event_submit_do_new_search_auction=1&_input_charset=utf-8&topSearch=1&atype=b&searchfrom=1&action=home%3Aredirect_app_action&from=1&sst=1&n=20&buying=buyitnow&q=%E7%9A%AE%E8%A3%A4%E5%A5%B3")
+#driver.get("https://h5.m.taobao.com/#index")
+driver.get("http://gs.amac.org.cn/amac-infodisc/res/pof/manager/index.html")
+time.sleep(5)
+driver.get("http://gs.amac.org.cn/amac-infodisc/res/pof/manager/index.html")
+# http://lbsyun.baidu.com/index.php?title=webapi/high-acc-ip
 
 print 'beging_1'
-#获取密码框并输入
+#driver.switchTo().frame("J_Search");
+
+    #J_autocomplete
 time.sleep(5)
 name = ''+time.ctime().replace(' ','-')+'.png'
-
-print 'beging_3'
-try:
-    elem = driver.find_element_by_id('email')#.click()
-    elem.send_keys('luyishisi')
-except Exception,e:
-    print e
-try:
-    elem = driver.find_element_by_id('pass')#.click()
-    elem.send_keys('luyi123')
-except Exception,e:
-    print e
-
-time.sleep(2)
-name = ''+time.ctime().replace(' ','-')+'.png'
 driver.save_screenshot(name)
-elem.send_keys(Keys.RETURN)
-    #J_autocomplete
+print 'beging_2'
+try:
+    driver.find_element_by_xpath('//a[@class="paginate_button next"]').click()
+    #elem.send_keys(u"皮裤女")
+    #elem.send_keys(Keys.RETURN)
+except Exception,e:
+    print e
 print 'beging_3'
 #获取密码框并输入
 #print 'beging_2'
