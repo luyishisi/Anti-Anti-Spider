@@ -13,6 +13,7 @@
 import requests
 import time,sys,json
 import xlsxwriter
+from sys import argv
 
 # 中文编码设置
 reload(sys)
@@ -37,17 +38,28 @@ def requests_post(key):
         }
 
     response = requests.request("POST", url, data=payload, headers=headers)
-
     print(response.text)
 
-def main(work):
-    url = 'https://s.m.taobao.com/search?event_submit_do_new_search_auction=1&_input_charset=utf-8&topSearch=1&atype=b&searchfrom=1&action=home%3Aredirect_app_action&from=1&q=%E7%9A%AE%E8%A3%A4%E7%94%B7&sst=1&n=20&buying=buyitnow&m=api4h5&abtest=10&wlsort=10&page=1'
-    body = requests.get(url)
-    body = body.text.encode('utf8')
-
-    dic_body = eval(body)
-    #print type(dic_body)
-    #print dic_body["RN"]
+def main(work,key,num):
+    if num ==  '1':
+        url = '''https://s.m.taobao.com/search?event_submit_do_new_search_auction=1\
+        &_input_charset=utf-8&topSearch=1&atype=b&searchfrom=1&action=home%3Aredirect_app_action&\
+        from=1&q='''+key+'''&sst=1&n=40&buying=buyitnow&m=api4h5&abtest=10&wlsort=10&page=1'''
+    else:
+        url = '''https://s.m.taobao.com/search?event_submit_do_new_search_auction=1\
+        &_input_charset=utf-8&topSearch=1&atype=b&searchfrom=1&action=home%3Aredirect_app_action&\
+        from=1&q=''' + key + '''&sst=1&n=40&buying=buyitnow&m=api4h5&abtest=14&\
+        wlsort=14&style=list&closeModues=nav%2Cselecthot%2Conesearch&sort=_sale&page=1
+        '''
+    #%E7%9A%AE%E8%A3%A4%E7%94%B7
+    try:
+        body = requests.get(url)
+        body = body.text.encode('utf8')
+        dic_body = eval(body)
+    except Exception,e:
+        print "请求出错，请将下列url放于浏览器中看是否可以打开。"
+        print url
+        print e
     for i in range(40):
         try:
             act = dic_body["listItem"][i]['act'] # 付款数
@@ -58,9 +70,20 @@ def main(work):
         except:
             area = ''
         try:
-            auctionURL = dic_body["listItem"][i]['auctionURL'] # 商品url
+            auctionURL = "https:"+dic_body["listItem"][i]['url'] # 商品url
+            #print len(auctionURL)
+            if(len(auctionURL)> 250):
+                auctionURL_1 = auctionURL[:250]
+                auctionURL_2 = auctionURL[250::]
+            else:
+                auctionURL_1 = auctionURL
+                auctionURL_2 = ''
+            #print auctionURL_1
+            #print auctionURL_2
         except:
             auctionURL = ''
+            auctionURL_1 = ''
+            auctionURL_2 = ''
         try:
             name = dic_body["listItem"][i]['name'] # 商品名
         except:
@@ -79,13 +102,17 @@ def main(work):
             price =''
         try:
             pic_path = dic_body["listItem"][i]['pic_path'] # 当前价格
-        except:
+            img_download(str(i+1),pic_path)
+        except Exception,e:
+            print e
             pic_path = ''
         try:
             zkType = dic_body["listItem"][i]['zkType'] # 当前价格
         except:
             zkType = ''
-        date = [ name, nick,act,price ,originalPrice,zkType,area,auctionURL,pic_path]
+
+
+        date = [ name, nick,act,price ,originalPrice,zkType,area,auctionURL_1 , auctionURL_2 ,pic_path]
         #print len(date)
         num = i+2
         install_table(date,work,num)
@@ -94,19 +121,30 @@ def main(work):
 
 def install_table(date,work,i):
     #i = 2
-    str_list = ['B','C','D','E','F','G','H','I','J','K']
+    str_list = ['B','C','D','E','F','G','H','I','J','K','L']
     #global worksheet1
-    work.write('A'+str(i),int(i)-1)
+    try:
+        work.write('A'+str(i),int(i)-1)
+    except Exception,e:
+        print '无法写入'
+        print e
     for now_str,now_date in zip(str_list,date):
-        #print now_str,now_date
         num = now_str+str(i)
-        #print num,len(now_date)
-
         try:
             work.write(num,now_date)
         except Exception, e:
+            print "无法写入"
             print e
 
+def img_download(id,url):
+    print "download_img "
+    #img = requests.get(url).context()
+    name = id
+    r = requests.get(url,timeout = 50)
+    #name = int(time.time())
+    f = open('./pic/'+str(name)+'.jpg','wb')
+    f.write(r.content)
+    f.close()
 
 
 
@@ -122,15 +160,40 @@ def create_table(name):
     worksheet1.write('F1', u'原始价格')
     worksheet1.write('G1', u'优惠类型')
     worksheet1.write('H1', u'地区')
-    worksheet1.write('I1', u'商品url')
-    worksheet1.write('J1', u'图片url')
-    worksheet1.write('K1', u'time')
+    worksheet1.write('I1', u'商品url_1')
+    worksheet1.write('J1', u'商品url_2')
+    worksheet1.write('K1', u'图片url')
+    worksheet1.write('L1', u'time')
     #workbook.close()
-    print 'end'
+    print '表格构建完成'
     return worksheet1,workbook
 
 if __name__ == '__main__':
-    work,workbook = create_table('filename')
-    main(work)
-    workbook.close()
-    print 'close'
+    #print argv
+    try:
+        key = argv[1]
+    except:
+        print '请指定关键词作为第一个参数'
+        key = ''
+    try:
+        name = argv[2]
+    except:
+        print "请指定输出文件名问第二个参数"
+        name = ''
+    try:
+        num = argv[3]
+    except:
+        print "请指定排序方式 1 为综合排序 2 为销量排序, 当前默认为综合排序"
+        num = 1
+    #key = u'皮裤男'
+
+    print '启动采集，关键词为：',key," 存入： ", name
+    if ( key == '' or name == '' or num == ''):
+        print '参数不正确'
+        print "请按顺序输入参数 关键词 输出文件名 排序方式（1或者2）"
+        print "例如:python Search.py 皮裤男 皮裤男1 2"
+    else:
+        work,workbook = create_table(name)
+        main(work,key,num)
+        workbook.close()
+        print '采集完成'
