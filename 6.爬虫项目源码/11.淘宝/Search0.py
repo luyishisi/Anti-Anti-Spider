@@ -137,10 +137,10 @@ def download_date(url):
             url = url
             print url
             driver.get(url)
-            driver.implicitly_wait(40) #设置智能超时时间
+            browser.implicitly_wait(40) #设置智能超时时间
             html = driver.page_source.encode('utf-8')
             driver.quit()
-        except Exception,e:
+        except,Exception,e:
             print "页面加载失败",e
             return 0
         try:
