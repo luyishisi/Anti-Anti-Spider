@@ -158,9 +158,39 @@ def download_date(url):
         except:
             print '页面解析失败'
             return 0
-    #else if(url.find("tmall")):
-        # print "检测为天猫页面，"
-        # pass
+    elif(url.find("tmall")):
+        print "检测为天猫页面，"
+        try:
+            driver = webdriver.PhantomJS()
+            print "正在获取详情页面,url为"
+            #url ="https://item.taobao.com/item.htm?id=538287375253&abtest=10&rn=07abc745561bdfad6f726eb186dd990e&sid=46f938ba6d759f6e420440bf98b6caea"
+            num_id = re.findall('id=[0-9]+&',url)[0].replace('id=','').replace('&','')
+            url = "https://detail.tmall.com/item.htm?id="+str(num_id)
+            print url
+            driver.get(url)
+            driver.implicitly_wait(40) #设置智能超时时间
+            html = driver.page_source.encode('utf-8')
+            driver.quit()
+        except Exception,e:
+            print "页面加载失败",e
+            return 0
+        try:
+            print '正在解析页面'
+            selector=etree.HTML(html, parser=etree.HTMLParser(encoding='utf-8'))
+            context=selector.xpath('//ul[@id="J_AttrUL"]/li')
+            list_date = u'1'
+            print list_date,len(context)
+            for i in range(len(context)):
+                a = etree.tostring(context[i], encoding="utf-8")#.encode('utf-8')
+                b = a.split('>')
+                end  = b[1].split('<')[0]+';'
+                list_date += end
+            #print list_date.encode('utf8')
+            return list_date
+        except Exception,e:
+            print '页面解析失败'
+            return 0
+
 
 def install_table(date,work,i):
     '''导入数据列表存入表格中 '''
