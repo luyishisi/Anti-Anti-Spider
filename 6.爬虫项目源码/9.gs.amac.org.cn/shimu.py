@@ -1,41 +1,28 @@
-#!/usr/bin/env python
-# -*- coding: UTF-8 -*-
-#-------------------------------------------------------------------------
-#   程序：shimu.py
-#   版本：0.1
-#   作者：copie
-#   日期：编写日期2016/12/15
-#   语言：Python 3.5.x
-#   系统:   archlinux 
-#   操作：python shimu.py
-#   功能：
-#-------------------------------------------------------------------------
 from selenium import webdriver
 import time
+import bs4
+urllist = set()
+browser = webdriver.Chrome()
+browser.get('http://gs.amac.org.cn/amac-infodisc/res/pof/manager/index.html')
+time.sleep(5)
+browser.get('http://gs.amac.org.cn/amac-infodisc/res/pof/manager/index.html')
 
-browser = webdriver.PhantomJS()
-browser.get('http://gs.amac.org.cn/amac-infodisc/res/pof/manager/index.html')
-time.sleep(10)
-browser.get('http://gs.amac.org.cn/amac-infodisc/res/pof/manager/index.html')
-files = open('ziliao.txt','w')
-body=browser.find_element_by_xpath('//*[@id="managerList"]/tbody')
-nextButton=browser.find_element_by_xpath('//*[@id="managerList_paginate"]/a[3]')
-t=browser.find_element_by_xpath('//*[@id="managerList_length"]/label/select/option[4]')
+nextButton = browser.find_element_by_xpath(
+    '//*[@id="managerList_paginate"]/a[3]')
+t = browser.find_element_by_xpath(
+    '//*[@id="managerList_length"]/label/select/option[4]')
 t.click()
-i=1
-while 1:
-    str=body.text
-    strs=str.split('\n')
-    for s in strs:
-        files.writelines(s)
-        files.writelines('\n')
-    print(len(strs))
-    if  len(strs) < 100:
+time.sleep(3)
+i = 1
+while True:
+    soup = bs4.BeautifulSoup(browser.page_source, 'lxml')
+    if len(soup.findAll('tbody')[4].findAll('tr')) < 100: # 有一个BUG最后一个页面没有抓取就结束了
         break
+    for tmp in soup.findAll('tbody')[4].findAll('tr'):
+        urllist.add(tmp.findAll('td')[1].find('a').get('href'))
     nextButton.click()
+    time.sleep(2)
     print(i)
-    i=i+1
+    print(len(urllist))
+    i = i + 1
     time.sleep(5)
-files.close()
-browser.close()
-
