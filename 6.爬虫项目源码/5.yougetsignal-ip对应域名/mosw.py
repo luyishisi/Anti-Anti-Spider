@@ -1,17 +1,19 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 #-------------------------------------------------------------------------
-#   程序：SpiderGaoDe.py
+#   程序：Spiderip.py
 #   版本：0.1
 #   作者：***
-#   日期：编写日期2016/6/22
+#   日期：编写日期2016/12/1
 #   语言：Python 2.7.x
-#   操作：python SpiderGaoDe.py Table
-#   功能：由IP获取地图中的经纬度
-#         表结构(id, ip, lon_gd, lat_gd, datetime, flag)
-#        本接口已经失效,
+#   操作：python Spiderip.py
+#   功能：由接口进入,搜索,ip对应的域名信息
+#   环境: linux ubuntu 16.04
+#
 #-------------------------------------------------------------------------
+
 import re ,os ,sys ,time ,json ,random ,MySQLdb ,requesocks ,threading
+import requests
 
 #--------------------------------------------------
 #中文编码设置
@@ -23,13 +25,14 @@ session = requesocks.session()
 # session.proxies = {'http':'socks5://127.0.0.1:9050','https':'socks5://127.0.0.1:9050'}
 #------------------------------------------------
 #   可修改的全局变量参数--Start.
-Table = "TW_ALL_IP_BLOCK_GD_20161107_ip"# sys.argv[1] # 表名称需修改
-HOST, USER, PASSWD, DB, PORT = '127.0.0.1', 'name', 'passwd', 'TW_ISP', 3306
+Table = "domain_ip_test"# sys.argv[1] # 表名称需修改
+#HOST, USER, PASSWD, DB, PORT = '127.0.0.1', 'name', 'passwd', 'TW_ISP', 3306
+HOST, USER, PASSWD, DB, PORT = '', '', '', "", 3306 # 需修改
 
-select_sql = "SELECT id, ip FROM %s WHERE flag IS NULL AND lat_gd IS NULL ORDER BY RAND() Limit 30000;"  # 可修改
+select_sql = "SELECT id, ip FROM %s WHERE flag IS NULL AND lat_gd IS NULL ORDER BY RAND() Limit 300;"  # 可修改
 Update_sql = "UPDATE %s SET datetime=now(), lon_gd='%s', lat_gd='%s', flag=%s WHERE id =%s;"  # 可修改
 
-THREAD_COUNT = 50  # 可修改
+THREAD_COUNT = 1  # 可修改
 schedule = 0
 ErrorList = []
 WarnList = []
@@ -54,6 +57,20 @@ class Handle_HTML(threading.Thread):
         self.lock.release()
         total = len(self.tasklist)
 
+        #-------------------------
+        # 头字段伪造部分
+        # Host: ditu.amap.com
+        # Connection: keep-alive
+        # Pragma: no-cache
+        # Cache-Control: no-cache
+        # Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+        # Upgrade-Insecure-Requests: 1
+        # Referer:http://ditu.amap.com/
+        # User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.107 Safari/537.36
+        # Accept-Encoding: deflate, sdch
+        # Accept-Language: zh-CN,zh;q=0.8,en;q=0.6,en-US;q=0.4
+        # X-Forwarded-For: 43.224.40.10
+
         user_agent = 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
 
         for (id, ip) in self.tasklist:
@@ -63,27 +80,68 @@ class Handle_HTML(threading.Thread):
             self.lock.release()#释放
 
             headers = {
-                    'User-Agent': user_agent,
-                    'Referer':'',
-                    'X-Forwarded-For': ip  #通过伪造此字段来修改ip位置
-                    }
-            URL = '已经失效' + str(random.random())
-            lon, lat = '', ''
+                'host': "domains.yougetsignal.com",
+                'connection': "keep-alive",
+                'content-length': "35",
+                'pragma': "no-cache",
+                'cache-control': "no-cache",
+                'origin': "http://www.yougetsignal.com",
+                'user-agent': "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/53.0.2785.143 Chrome/53.0.2785.143 Safari/537.36",
+                'content-type': "application/x-www-form-urlencoded",
+                'accept': "text/javascript, text/html, application/xml, text/xml, */*",
+                'x-prototype-version': "1.6.0",
+                'x-requested-with': "XMLHttpRequest",
+                'referer': "http://www.yougetsignal.com/tools/web-sites-on-web-server/",
+                'accept-encoding': "gzip, deflate",
+                'accept-language': "zh-CN,zh;q=0.8",
+                'X-Forwarded-For': ip
+            }
+
+            URL = "http://domains.yougetsignal.com/domains.php"
+
+            #payload = "remoteAddress=www.baidu.com"
+            payload = "remoteAddress="+ip
+
+
+#{"status":"Success", "resultsMethod":"database", "lastScrape":"2016-10-15 02:50:50", "domainCount":"12", "remoteAddress":"www.baidu.com", "remoteIpAddress":"103.235.46.39", "domainArray":[["123.baidu.com", ""], ["beat.baidu.com", ""], ["mo.baidu.com", ""], ["share.baidu.com", ""], ["top.baidu.com", ""], ["www.a.shifen.com", ""], ["www.baidu.com", ""], ["www.baidu.com.cn", ""], ["www.mydrivers.com", ""], ["www.renrensex.com", "1"], ["xueshu.baidu.com", ""], ["zhidao.baidu.com", ""]]}
+
 
             try:
                 #---------------------------------
                 # 发出请求并且抽取需要的数据并返回
                 time.sleep(random.uniform(0, 1))#每个进程小休息一会
-                response = session.get(URL, headers=headers)#发请求
+
+                print 'brgin'
+                #response = session.get(URL, headers=headers)#发请求
+                try:
+                    porxy_ip = "14.29.2.37"
+                    porxy_port = "80"
+                    porxy = porxy_ip+":"+porxy_port
+                    proxies_temp = {
+                          "http": "http://"+porxy,
+                          "https": "http://"+porxy, }
+                    lon, lat = '', ''
+
+                    print URL,ip
+                    response = requests.request("POST", URL, data=payload, headers=headers,proxies = proxies_temp)
+                    print(response.text)
+                    time.sleep(1)
+                except Exception,e:
+                    print Exception,e
+
+
                 result = response.text.encode('utf-8')#改编码
                 result = json.loads(result)
-                if result.has_key('lat'):
-                    lon, lat = result['lng'], result['lat']
-                    print result['cip'], lon, lat
+                if result.has_key('domainArray'):
+                    lon, lat = str(result['domainCount']), str(result['domainArray'])
+                    #print #result['cip'], lon, lat
+                    print lon, lat
+                    lat = 'a'
                     cursor.execute(Update_sql % (Table, lon, lat, 1, id))
                 else:
                     cursor.execute(Update_sql % (Table, lon, lat, 0, id))
                 connect.commit()
+                print 'end~~'
             except Exception as e:
                 time.sleep(random.uniform(0, 3))
                 ErrorList.append("The ip is :[%s] Error:%s\n result:%s" %(ip, e, result))

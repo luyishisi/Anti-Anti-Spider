@@ -19,11 +19,11 @@ sys.setdefaultencoding('utf-8')
 Type = sys.getfilesystemencoding()
 
 # 数据库设置
-MYSQL_HOST = '171.15.132.56'
-MYSQL_DBNAME = 'DataBase_GD'
-MYSQL_USER = 'luyishisi'
+MYSQL_HOST = ''
+MYSQL_DBNAME = ''
+MYSQL_USER = ''
 MYSQL_PASSWD = ''
-MYSQL_PORT= 33306
+MYSQL_PORT= 3306
 
 # 此处修改数据库插入修改语句
 install_str = '''

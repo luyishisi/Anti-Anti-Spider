@@ -7,7 +7,7 @@
 #   日期：编写日期2016/11/10
 #   语言：Python 2.7.x
 #   操作：python referer_forge.py
-#   功能：从www.gatherproxy.com网站采集代理信息并存入数据库	
+#   功能：从www.gatherproxy.com网站采集代理信息并存入数据库
 #-------------------------------------------------------------------------
 import requests,re,json
 import sys,os,time,MySQLdb,MySQLdb
@@ -19,11 +19,11 @@ sys.setdefaultencoding('utf-8')
 Type = sys.getfilesystemencoding()
 
 # 数据库设置
-MYSQL_HOST = '171.15.132.56'
-MYSQL_DBNAME = 'DataBase_GD'
-MYSQL_USER = 'luyishisi'
+MYSQL_HOST = ''
+MYSQL_DBNAME = ''
+MYSQL_USER = ''
 MYSQL_PASSWD = ''
-MYSQL_PORT= 33306
+MYSQL_PORT= 3306
 
 # 此处修改数据库插入修改语句
 install_str = '''
@@ -90,12 +90,12 @@ def re_html_code(html_code,proxy_list_json):
         Last_test_time = json_list['PROXY_LAST_UPDATE']
         proxy_status = '1'
         Remarks = 'ly'
-        # `id`, `proxy_ip`, `proxy_port`, `proxy_country`, `proxy_type`, `addtime`, `Last_test_time`, `proxy_status`, `Remarks`   
+        # `id`, `proxy_ip`, `proxy_port`, `proxy_country`, `proxy_type`, `addtime`, `Last_test_time`, `proxy_status`, `Remarks`
 
         list_i = [PROXY_IP,PROXY_PORT,PROXY_COUNTRY,PROXY_TYPE,addtime,Last_test_time,proxy_status,Remarks]
-        
+
         proxy_list_json.append(list_i)
-		
+
 #    print proxy_list_json
     return proxy_list_json
 
@@ -109,7 +109,7 @@ if __name__ == '__main__':
         print Exception,e
 
     url = "http://www.gatherproxy.com/zh/proxylist/country/?c=China"
-    
+
     try:
         html_code = get_request(url,headers)
         proxy_list_json = []
@@ -120,5 +120,3 @@ if __name__ == '__main__':
             insert_ll(install_str,i,conn,cur)
     except Exception,e:
         print Exception,e
-
-

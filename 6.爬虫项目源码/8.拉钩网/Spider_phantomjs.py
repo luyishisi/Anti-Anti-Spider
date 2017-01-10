@@ -29,7 +29,7 @@ session = requesocks.session()
 #------------------------------------------------
 #   可修改的全局变量参数--Start.
 Table = "lagou_tb"# sys.argv[1] # 表名称需修改
-HOST, USER, PASSWD, DB, PORT = '127.0.0.1', 'root', 'luyi123', 'my_db', 3306
+HOST, USER, PASSWD, DB, PORT = '', '', '', '', 3306
 
 select_sql = "SELECT id,url FROM %s where flag = 3 limit 30000;" # 在数据库将url打乱了.
 Update_sql = "UPDATE "+Table+" SET data1=%s, flag=%s WHERE id =%s;"  # 可修改
