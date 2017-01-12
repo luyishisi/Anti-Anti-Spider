@@ -94,7 +94,7 @@ def re_html_code(html_code,proxy_list_json):
             Remarks = 'ly'
             # `id`, `proxy_ip`, `proxy_port`, `proxy_country`, `proxy_type`, `addtime`, `Last_test_time`, `proxy_status`, `Remarks`
             list_i = [PROXY_IP,PROXY_PORT,PROXY_COUNTRY,PROXY_TYPE,addtime,Last_test_time,proxy_status,Remarks]
-
+            #print list_i
             proxy_list_json.append(list_i)
 
         print proxy_list_json

@@ -5,17 +5,6 @@ import requests
 from PIL import Image
 import math,time
 
-def imagesget():
-    os.mkdir('images')
-    count=0
-    while True:
-        img=requests.get('http://wsxk.hust.edu.cn/randomImage.action').content
-        with open('images/%s.jpeg'%count,'wb') as imgfile:
-            imgfile.write(img)
-        count+=1
-        if(count==100):
-            break
-
 def convert_image(image):
     image=image.convert('L')#灰度
     image2=Image.new('L',image.size,255)
@@ -50,7 +39,8 @@ def cut_image(image):
     images=[]
     for letter in letters:
         img=image.crop((letter[0],0,letter[1],image.size[1]))
-        #img.save(str(letter[0])+'.jpeg')#展示切割效果
+        #img.save(str(letter[0])+'.png')#展示切割效果
+        img.save("./cat/"+str(int(time.time()))+'.png')#展示切割效果
         images.append(img)
     return images
 
@@ -61,6 +51,7 @@ def buildvector(image):
     for i in image.getdata():
         result[count]=i
         count+=1
+    #print result
     return result
 
 
@@ -81,19 +72,27 @@ class CaptchaRecognize:
     def magnitude(self,concordance):
         total = 0
         for word,count in concordance.items():
-            total += count ** 2
+            try:
+                if(type(count) == type(())):
+                    total += count[0] ** 2
+                #print type(total),total,type(count),count ** 2
+                else:
+                    total += count ** 2
+            except Exception,e:
+                print type(total),total,type(count),count
+                print e
         return math.sqrt(total)
 
     #计算矢量之间的 cos 值
     def relation(self,concordance1, concordance2):
-
         relevance = 0
         topvalue = 0
         for word, count in concordance1.items():
             if word in concordance2:
                 print type(topvalue),topvalue,count,concordance2[word]
-                topvalue += count * concordance2[word]
-                time.sleep(10)
+                time.sleep(1)
+                topvalue += count * concordance2[word][0]
+                #time.sleep(10)
         return topvalue / (self.magnitude(concordance1) * self.magnitude(concordance2))
 
     def recognise(self,image):
@@ -119,12 +118,27 @@ class CaptchaRecognize:
         return result
 
 if __name__=='__main__':
-    imageRecognize=CaptchaRecognize()
-    # 设置图片路径
-    image=Image.open('3.png')
-    print image.mode
+    import os
+    dir="./temp"
+    name_list = []
+    for root,dirs,files in os.walk(dir):
+        for file in files:
+            #name_list.append(file)
+            name = os.path.join(root,file)
+            name_list.append(name)
 
-    result=imageRecognize.recognise(image)
+    print name_list
+    for i in name_list:
+        #name = '11'
+        name = i
+        print name
 
-    string=[''.join(item[1]) for item in result]
-    print(string)
+        imageRecognize=CaptchaRecognize()
+        # 设置图片路径
+        image=Image.open(name)
+        #image=Image.open('./temp/2.png')
+        print image.mode
+        result=imageRecognize.recognise(image)
+        string=[''.join(item[1]) for item in result]
+        print(string)
+        break
