@@ -79,7 +79,7 @@ class CaptchaRecognize:
                 else:
                     total += count ** 2
             except Exception,e:
-                print type(total),total,type(count),count
+                #print type(total),total,type(count),count
                 print e
         return math.sqrt(total)
 
@@ -89,9 +89,13 @@ class CaptchaRecognize:
         topvalue = 0
         for word, count in concordance1.items():
             if word in concordance2:
-                print type(topvalue),topvalue,count,concordance2[word]
-                time.sleep(1)
-                topvalue += count * concordance2[word][0]
+                #print type(topvalue),topvalue,count,concordance2[word]
+                #time.sleep(1)
+                if(type(concordance2[word]) == type(())):
+                    topvalue += count * concordance2[word][0]
+                #print type(total),total,type(count),count ** 2
+                else:
+                    topvalue += count * concordance2[word]
                 #time.sleep(10)
         return topvalue / (self.magnitude(concordance1) * self.magnitude(concordance2))
 
@@ -127,7 +131,7 @@ if __name__=='__main__':
             name = os.path.join(root,file)
             name_list.append(name)
 
-    print name_list
+    #print name_list
     for i in name_list:
         #name = '11'
         name = i
@@ -137,8 +141,8 @@ if __name__=='__main__':
         # 设置图片路径
         image=Image.open(name)
         #image=Image.open('./temp/2.png')
-        print image.mode
+        #print image.mode
         result=imageRecognize.recognise(image)
         string=[''.join(item[1]) for item in result]
         print(string)
-        break
+        #break
