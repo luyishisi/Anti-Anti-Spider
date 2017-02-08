@@ -14,7 +14,7 @@ if (system.args.length < 3 || system.args.length > 5) {
     console.log('  image (png/jpg output) examples: "1920px" entire page, window width 1920px');
     console.log('                                   "800px*600px" window, clipped to 800x600');
     phantom.exit(1);
-} 
+}
 else {
     address = system.args[1];
     output = system.args[2];
@@ -45,55 +45,19 @@ else {
         if (status !== 'success') {
             console.log('Unable to load the address!');
             phantom.exit(1);
-        } 
-		else {
-            console.log('able to load the address!');
-            window.setTimeout(function () {
-                page.render(output);
-        		page.render('jietu_6.png');
-//                phantom.exit();
-				  console.log('asd')	
-            }, 1000);
-            window.setInterval(function () {
-                page.render(output);
-        		page.render('jietu_8.png');
-//                phantom.exit();
-				  console.log('111asd')	
-            }, 5000);
-			
-
         }
     });
 }
-t = 17
+t = 10
 interval = setInterval(function(){
-    if ( t > 0 ) {
-        console.log(t--);
-    }
-    //接下来是根据不同的时间段保留不同的截图，
+    if ( t > 0 ) { console.log(t--); }
     if (t == 0) {
-        console.log("jietu_6");
-        page.render('jietu_6.png');
+         page.render(output);
+         console.log(output);
+        //console.log("jietu_6");
+       // page.render('jietu_6.png');
         //打印出页面源代码。
-        console.log(page.content);
+        //console.log(page.content);
         phantom.exit();
-    }
-    if (t == 2) {
-        console.log("jietu_5");
-        page.render('jietu_5.png');
-    }
-    if (t == 4){
-        console.log("jietu_4");
-        page.render('jietu_4.png');
-    }
-    if (t == 5){
-        console.log("jietu_3");
-        page.render('jietu_3.png');
-    }
-
-    if ( t == 10 ){
-      console.log("jietu——1");
-      page.render('jietu_1.png');
-      console.log('click_begin');
     }
 }, 1000);

@@ -1,0 +1,303 @@
+[INFO  - 2017-01-20T08:22:25.450Z] GhostDriver - Main - running on port 51036
+[INFO  - 2017-01-20T08:22:26.414Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.23 Mobile Safari/537.36","webSecurityEnabled":true}
+[INFO  - 2017-01-20T08:22:26.414Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.customHeaders:  - {}
+[INFO  - 2017-01-20T08:22:26.414Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.settings.userAgent":"Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.23 Mobile Safari/537.36"}
+[INFO  - 2017-01-20T08:22:26.414Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 93758e80-dee9-11e6-857e-a77e012f083b
+[ERROR - 2017-01-20T08:23:31.666Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:23:31.666Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:23:40.568Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:23:40.569Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:23:53.556Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:23:53.557Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:24:02.375Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:24:02.375Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:24:10.785Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:24:10.785Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:24:19.547Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:24:19.547Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:24:30.853Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:24:30.854Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:24:40.392Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:24:40.393Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:24:52.032Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:24:52.033Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:25:02.174Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:25:02.175Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:25:10.619Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:25:10.621Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:25:19.095Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:25:19.095Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:25:27.742Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:25:27.742Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:25:36.567Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:25:36.569Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:25:46.492Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:25:46.494Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:25:55.187Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:25:55.187Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:26:03.698Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:26:03.698Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:26:12.793Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:26:12.793Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:26:21.441Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - msg: TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-01-20T08:26:21.441Z] Session [93758e80-dee9-11e6-857e-a77e012f083b] - page.onError - stack:
+  defineProperty (http://dn-growing.qbox.me/vds.js:2)
+  registerHistoryHandler (http://dn-growing.qbox.me/vds.js:2)
+  domLoadedHandler (http://dn-growing.qbox.me/vds.js:2)
+  observe (http://dn-growing.qbox.me/vds.js:2)
+  s (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  connect (http://dn-growing.qbox.me/vds.js:2)
+  (anonymous function) (http://dn-growing.qbox.me/vds.js:2)
+  i (http://dn-growing.qbox.me/vds.js:1)
+  t (http://dn-growing.qbox.me/vds.js:1)
+
+  phantomjs://platform/console++.js:263 in error
