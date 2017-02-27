@@ -5,7 +5,8 @@
 以公司名称为关键词在[新浪微博](http://s.weibo.com/)中搜索2011-2015五年的所有微博，并统计评论数、转发数、点赞数，需要搜索的公司有1000个左右。
 
 在ADSL拨号上网的计算机上运行Python爬虫程序，并将数据存储到sqlite3数据库中。项目主页为[https://github.com/szcf-weiya/SinaSpider](https://github.com/szcf-weiya/SinaSpider)，其中有完整的爬虫代码。
-
+同步发布在 https://github.com/luyishisi/Anti-Anti-Spider 以及博客：
+ https://www.urlteam.org/2017/02/%E4%BB%A5%E5%85%AC%E5%8F%B8%E4%B8%BA%E5%85%B3%E9%94%AE%E8%AF%8D%E7%9A%84%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9A%E9%87%87%E9%9B%86/
 本文将详细阐述具体爬虫实现过程。
 
 ## 目标网页
@@ -82,7 +83,7 @@ def getWeiboContent(self):
     except httplib.IncompleteRead:
         print 'Incompleted!'
         return False
-        
+
     soupPage = BeautifulSoup(page, 'lxml')
     numList = soupPage.find_all('script')
     if len(numList) == 0:
@@ -109,11 +110,11 @@ def getWeiboHtml(self):
         return False
     elif weiboContent == False:
         return False
-    
+
     # in case some empty json element
     substr = re.compile("\[\]")
     weiboContent = substr.sub("\"NULL\"", weiboContent)
-    
+
     substr1 = re.compile("^.*STK.pageletM.view\\(")
     substr2 = re.compile("\\)$")
     substr4 = re.compile(r'\[')
@@ -183,7 +184,7 @@ for i in range(0, len(WeiboItemContent)):
         praisedString = WeiboItemPraised.contents[0].contents[0].contents[1].string
         commentContent = WeiboItemComment.contents[0].contents[0].contents
         forwardString = WeiboItemForward.contents[0].contents[0].contents[1].string
-        
+
         if praisedString == None:
         	praised = 0
         else:
@@ -222,7 +223,7 @@ def CreateWeiboTable(db_name):
         return False
     conn.commit()
     conn.close()
-	
+
 dbname = test.db
 CreateWeiboTable(dbname)
 conn = sqlite3.connect(dbname)
@@ -246,7 +247,7 @@ conn.commit()
 
 太天真了，竟然想去识别。这里尝试的是pytesser库，使用其实是很简单的。
 
-```python 
+```python
 from pytesser import *
 imgfile = "test.png" # 当前路径中的一个test.png验证码图象
 print image_file_to_string(imgfile)
@@ -304,4 +305,3 @@ res = str(conn.execute(num_total_sql).fetchone()[0]
 ```
 最后将结果写进excel文件中，部分结果如下图所示
   ![](results.png)
-
