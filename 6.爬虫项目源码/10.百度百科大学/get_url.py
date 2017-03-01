@@ -1,8 +1,9 @@
-#coding:utf-8
-import requests
+# coding:utf-8
 import sys
 
-#中文编码设置
+import requests
+
+# 中文编码设置
 reload(sys)
 sys.setdefaultencoding('utf-8')
 Type = sys.getfilesystemencoding()
@@ -25,7 +26,7 @@ headers = {
     'user-agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36",
     'x-requested-with': "XMLHttpRequest",
     'postman-token': "36f249ee-4f92-4669-7491-274692665478"
-    }
+}
 print 'a = ['
 for i in range(84):
     payload_now = payload % i
@@ -33,6 +34,6 @@ for i in range(84):
     dic = eval(response.content.decode('utf8').encode('utf8'))
     dic1 = dic['lemmaList']
     for i in dic1:
-        #print i['lemmaTitle'].decode('utf8').encode('utf8')
-        print '"'+i['lemmaUrl']+'",'
+        # print i['lemmaTitle'].decode('utf8').encode('utf8')
+        print '"' + i['lemmaUrl'] + '",'
 print ']'

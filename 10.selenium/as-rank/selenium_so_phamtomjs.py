@@ -10,37 +10,40 @@
 #   功能：结合crontab定时启动每天自动登录so网站,刷银牌用
 #-------------------------------------------------------------------------
 
+import sys
+import time
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-import time,sys
 
 # 中文编码设置
 reload(sys)
 sys.setdefaultencoding('utf-8')
 Type = sys.getfilesystemencoding()
 
-#加载内核
+# 加载内核
 driver = webdriver.PhantomJS()
 
-#发起请求≈
-for i in range(10,20):
+# 发起请求≈
+for i in range(10, 20):
     try:
-        print i,'begin',time.ctime()
+        print i, 'begin', time.ctime()
         num = i
-        url = 'http://as-rank.caida.org/?mode0=as-info&mode1=as-table&as='+str(num)+'&data-selected-id=39'
+        url = 'http://as-rank.caida.org/?mode0=as-info&mode1=as-table&as=' + \
+            str(num) + '&data-selected-id=39'
         driver.implicitly_wait(10)
         driver.get(url)
-        #保存页面截图和源码
-        name = './png/'+str(num)+'.png'
-        name_html = "./code/"+str(num)+'.html'
+        # 保存页面截图和源码
+        name = './png/' + str(num) + '.png'
+        name_html = "./code/" + str(num) + '.html'
 
         driver.save_screenshot(name)
-        f = open(name_html,'w')
+        f = open(name_html, 'w')
         f.write(driver.page_source)
         f.close()
 
-        #time.sleep(5)
-        print i,'end  ',time.ctime()
-    except Exception,e:
+        # time.sleep(5)
+        print i, 'end  ', time.ctime()
+    except Exception, e:
         print e
 driver.close()
