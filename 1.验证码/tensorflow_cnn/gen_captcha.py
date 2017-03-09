@@ -3,7 +3,7 @@ from captcha.image import ImageCaptcha  # pip install captcha
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
-import random,time
+import random,time,os
 
 # 验证码中的字符, 就不用汉字了
 number = ['0','1','2','3','4','5','6','7','8','9']
@@ -25,7 +25,12 @@ def gen_captcha_text_and_image():
 	captcha_text = ''.join(captcha_text)
 
 	captcha = image.generate(captcha_text)
-	image.write(captcha_text, captcha_text + '.jpg')  # 写到文件
+	#image.write(captcha_text, captcha_text + '.jpg')  # 写到文件
+
+	#rm  =  'rm '+captcha_text + '.jpg'
+	#print rm
+	#os.system(rm)
+	#time.sleep(10)
 
 	captcha_image = Image.open(captcha)
 	captcha_image = np.array(captcha_image)
@@ -42,5 +47,5 @@ if __name__ == '__main__':
     	plt.imshow(image)
 
 
-    	#plt.show()
+    	plt.show()
     	print 'end ',time.ctime()
