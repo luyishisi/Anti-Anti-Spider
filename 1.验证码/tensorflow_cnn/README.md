@@ -7,7 +7,11 @@
 
 
 直接运行 ：
-python TensorFlow_cnn.py
+python TensorFlow_cnn_train.py
+则开始训练，当前成功率设定为50%则停止，
+训练完毕确保训练后模型在同一文件夹下则运行
+python TensorFlow_cnn_test_model.py
+实时生成新验证码并且进行预测
 
 当前程序设定一个成功率0.5或者0.7
 
