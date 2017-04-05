@@ -36,7 +36,7 @@ https://github.com/luyishisi/Anti-Anti-Spider/blob/master/tree.txt
 
 3:代码模板    {多线程优化，百度地图可视化采集，聚焦爬虫，selenium模拟登陆，域名爬虫}
 
-5:爬虫项目源码 {优酷网，腾讯视频，推特，拉钩网，百度地图，妹子图网，百家号，百度百科，csdn，新浪微博}
+5:爬虫项目源码 {优酷网，腾讯视频，推特，拉钩网，百度地图，妹子图网，百家号，百度百科，csdn，新浪微博, 淘宝采集}
 
 6:ip跟换技术   {代理，tor，adsl}
 
