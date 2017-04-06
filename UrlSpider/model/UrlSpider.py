@@ -44,7 +44,7 @@ Update_sql = "UPDATE " + Table + " SET date=%s, flag=%s WHERE id =%s;"  # 数据
 
 THREAD_COUNT = 50  # 开启线程数
 sql_num_base = 200  # 自定义的执行批量插入的随机值基数，当此值为1时则每次获取数据均直接插入。
-sql_num_add = 100  # 自定义的随机值加数，平均而言，当单独一个线程执行sql_num_base+1/3*sql_num_add次数时执行插入
+sql_num_add = 1000  # 自定义的随机值加数，平均而言，当单独一个线程执行sql_num_base+1/3*sql_num_add次数时执行插入
 #   不可修改全局变量参数
 #------------------------------------------------
 schedule = 0  # 当前线程标志
@@ -133,9 +133,14 @@ class Handle_HTML(threading.Thread):
                 # 随机一个限制数,200-300 到则进行插入
                 sql_num = int(random.uniform(sql_num_base, sql_num_base + 100))
                 if(now_requests_num >= sql_num):
+                    try:
+                        cursor.executemany(Update_sql, date_list)#防止长时间的请求时间导致数据库连接断开
+                        connect.commit()
+                    except:
+                        connect, cursor = ConnectDB()
+                        cursor.executemany(Update_sql, date_list)#
+                        connect.commit()
                     now_requests_num = 0
-                    cursor.executemany(Update_sql, date_list)
-                    connect.commit()
                     date_list = []
                     print 'up', time.ctime(), '&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&', sql_num
             except Exception, e:
@@ -147,8 +152,14 @@ class Handle_HTML(threading.Thread):
             self.lock.acquire()
             schedule += 1
             self.lock.release()
-        cursor.executemany(Update_sql, date_list)  # 大爷的注释,,这里要保存一次
-        connect.commit()
+
+        try:
+            cursor.executemany(Update_sql, date_list)#防止长时间的请求时间导致数据库连接断开
+            connect.commit()
+        except:
+            connect, cursor = ConnectDB()
+            cursor.executemany(Update_sql, date_list)#
+            connect.commit()
         connect.close()
 
 
@@ -163,6 +174,7 @@ def ConnectDB():
             break
         except MySQLdb.Error, e:
             print "Error %d: %s" % (e.args[0], e.args[1])
+            time.sleep(60)#防止出现永远循环
     return connect, cursor
 
 
