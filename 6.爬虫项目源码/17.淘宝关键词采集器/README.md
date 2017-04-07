@@ -24,3 +24,7 @@ python Search.py 皮裤 piku3 3 5 100 300  #指定价格搜索
 
 
 程序回头再发，持续关注。
+
+github：淘宝关键词采集器  https://github.com/luyishisi/Anti-Anti-Spider/tree/master/6.爬虫项目源码/17.淘宝关键词采集器
+
+博客原文：urlteam    https://www.urlteam.org/2017/04/淘宝商品信息采集器二，开放源码可自定义关键词/
