@@ -7,6 +7,3 @@ phantomjs request.js http://www.xicidaili.com/ > xicidaili.txt
 本部分均有涉及到请求头字段的伪造。
 
 包含x-forword部分
-
-
-

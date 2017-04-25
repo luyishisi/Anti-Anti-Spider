@@ -11,4 +11,5 @@ options.add_argument('user-agent="Mozilla/5.0 (iPod; U; CPU iPhone OS 2_1 like M
 browser = webdriver.Chrome(chrome_options=options)
 url = "https://httpbin.org/get?show_env=1"
 browser.get(url)
+input("查看效果")
 browser.quit()

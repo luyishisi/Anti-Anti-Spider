@@ -20,7 +20,7 @@ from selenium.webdriver.common.keys import Keys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 Type = sys.getfilesystemencoding()
-
+aa = ''
 # 加载内核
 #driver = webdriver.PhantomJS()
 driver = webdriver.Chrome()
@@ -38,19 +38,19 @@ elem = driver.find_element_by_xpath('//*[@id="J-input-user"]')
 elem.send_keys("@qq.com")
 time.sleep(1)
 elem = driver.find_element_by_xpath('//*[@id="password_rsainput"]')
-elem.send_keys("")
+elem.send_keys(aa)
 time.sleep(1)
 elem = driver.find_element_by_xpath(
      '//*[@id="J-login-btn"]').click()
 time.sleep(5)
 
-elem = driver.find_element_by_xpath('//*[@id="ipt-search-key"]')
-elem.send_keys("")
-
-time.sleep(1)
-elem = driver.find_element_by_xpath(
-     '//*[@id="amount"]').click()
-time.sleep(1)
+# elem = driver.find_element_by_xpath('//*[@id="ipt-search-key"]')
+# elem.send_keys("")
+#
+# time.sleep(1)
+# elem = driver.find_element_by_xpath(
+#      '//*[@id="amount"]').click()
+# time.sleep(1)
 # 获取密码框并输入
 # print 'beging_2'
 # elem = driver.find_element_by_xpath(
@@ -64,24 +64,21 @@ time.sleep(1)
 # js1 = 'return document.body.scrollHeight'
 # js2 = 'window.scrollTo(0, document.body.scrollHeight)'
 
-# old_scroll_height = 0
-# while(driver.execute_script(js1) > old_scroll_height):
-#     old_scroll_height = driver.execute_script(js1)
-#     driver.execute_script(js2)
-#     time.sleep(3)
-#     name = '' + time.ctime().replace(' ', '-') + '.png'
-#     driver.save_screenshot(name)
-# 保存页面截图和源码
+old_scroll_height = 0
+while(driver.execute_script(js1) > old_scroll_height):
+    old_scroll_height = driver.execute_script(js1)
+    driver.execute_script(js2)
+    time.sleep(3)
+    name = '' + time.ctime().replace(' ', '-') + '.png'
+    driver.save_screenshot(name)
+保存页面截图和源码
 name = '' + time.ctime().replace(' ', '-') + '.png'
 driver.save_screenshot(name)
 #f = open(name_html.encode('utf-8'),'w')
 # f.write(driver.page_source)
 # f.close()
-
 # print driver.page_source.encode('utf8')
-
-time.sleep(5)
-
+time.sleep(500)
 # driver.quit()
 # elem.clear()
 # time.sleep(10)
