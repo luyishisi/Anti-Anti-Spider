@@ -27,12 +27,14 @@ driver = webdriver.Chrome()
 # 发起请求
 print 'beging_0'
 url ='https://shenghuo.alipay.com/send/payment/fill.htm'
+#url = 'https://whois.aliyun.com/whois/domain/wangwang.com?spm=5334.7477273.3.1'
 # driver.get("http://lbsyun.baidu.com/skins/MySkin/resources/iframs/heightAccApi.html")
 # driver.get("https://s.m.taobao.com/h5?event_submit_do_new_search_auction=1&_input_charset=utf-8&topSearch=1&atype=b&searchfrom=1&action=home%3Aredirect_app_action&from=1&sst=1&n=20&buying=buyitnow&q=%E7%9A%AE%E8%A3%A4%E5%A5%B3")
 driver.get(url)
 # http://lbsyun.baidu.com/index.php?title=webapi/high-acc-ip
 
 # 获取用户名框并输入
+print driver.page_source.encode('utf8')
 print 'beging_1'
 elem = driver.find_element_by_xpath('//*[@id="J-input-user"]')
 elem.send_keys("@qq.com")
@@ -64,20 +66,20 @@ time.sleep(5)
 # js1 = 'return document.body.scrollHeight'
 # js2 = 'window.scrollTo(0, document.body.scrollHeight)'
 
-old_scroll_height = 0
-while(driver.execute_script(js1) > old_scroll_height):
-    old_scroll_height = driver.execute_script(js1)
-    driver.execute_script(js2)
-    time.sleep(3)
-    name = '' + time.ctime().replace(' ', '-') + '.png'
-    driver.save_screenshot(name)
-保存页面截图和源码
-name = '' + time.ctime().replace(' ', '-') + '.png'
-driver.save_screenshot(name)
+# old_scroll_height = 0
+# while(driver.execute_script(js1) > old_scroll_height):
+#     old_scroll_height = driver.execute_script(js1)
+#     driver.execute_script(js2)
+#     time.sleep(3)
+#     name = '' + time.ctime().replace(' ', '-') + '.png'
+#     driver.save_screenshot(name)
+# 保存页面截图和源码
+# name = '' + time.ctime().replace(' ', '-') + '.png'
+# driver.save_screenshot(name)
 #f = open(name_html.encode('utf-8'),'w')
 # f.write(driver.page_source)
 # f.close()
-# print driver.page_source.encode('utf8')
+
 time.sleep(500)
 # driver.quit()
 # elem.clear()
