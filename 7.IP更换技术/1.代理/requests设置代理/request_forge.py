@@ -34,30 +34,34 @@ headers = {
 
 #发起请求,
 def get_request(url,headers):
-	'''参数引入及头信息'''
-	#可设置代理
-    #proxies = {
-	#	"http": "http://"+ip,
-	#	"https": "http://"+ip,
-	#}
+    '''参数引入及头信息'''
+    #可设置代理
+    ip = '61.143.158.238'
+    duankou = '808'
+    proxies = {
+    	"http": "http://"+ip+':'+duankou,
+    	"https": "http://"+ip+':'+duankou,
+    }
     #url = "https://www.urlteam.org"
 
-	html=requests.get(url,headers=headers, timeout=10).text#.decode('utf-8')
-	print html
-	return html
+    html=requests.get(url,headers=headers,timeout=20,proxies=proxies).text#.decode('utf-8')
+    print html.encode('utf-8')
+    return html
 
 if __name__ == '__main__':
-    url = "http://www.xicidaili.com/nn"
-    html_code = get_request(url,headers)
 
-    re_list_ip = re.findall(r'<td>\d*\.\d*\.\d*\.\d*</td>',html_code)
-    re_list_port = re.findall(r'<td>[\d]*</td>',html_code)
-    re_list_live_time = re.findall(r'<td>\d*[小时分钟天]*</td>',html_code)
-    re_list_time = re.findall(r'<td>\d*-\d*-\d* \d*:\d*</td>',html_code)
-    l = len(re_list_ip)
-    print len(re_list_port)
-    print len(re_list_live_time)
-    print len(re_list_time)
+    url = "http://www.xicidaili.com/nn"
+    url = 'http://httpbin.org/get?show_env=1'
+    html_code = get_request(url,headers)
+    #
+    # re_list_ip = re.findall(r'<td>\d*\.\d*\.\d*\.\d*</td>',html_code)
+    # re_list_port = re.findall(r'<td>[\d]*</td>',html_code)
+    # re_list_live_time = re.findall(r'<td>\d*[小时分钟天]*</td>',html_code)
+    # re_list_time = re.findall(r'<td>\d*-\d*-\d* \d*:\d*</td>',html_code)
+    # l = len(re_list_ip)
+    # print len(re_list_port)
+    # print len(re_list_live_time)
+    # print len(re_list_time)
 
 
     #for i in range(l):
