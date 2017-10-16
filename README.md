@@ -1,5 +1,6 @@
 # Anti-Anti-Spider
-# 2016-10-24 begin  2017-5-8 end
+# author shisi,xuna
+# 2016-10-24 begin  #2017-5-8 end
 爬虫的开源项目到现在半年差不多有900+的star了，，接下来就是要玩玩验证码破解了，定一个阶段性目标，前进！再建议一个开源项目，目标1000star！！
 
 仓库网址位于https://github.com/luyishisi/Anti-Anti-Spider 欢迎stat
