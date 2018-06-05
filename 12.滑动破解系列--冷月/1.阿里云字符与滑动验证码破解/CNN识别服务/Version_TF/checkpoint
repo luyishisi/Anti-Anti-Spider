@@ -1,0 +1,2 @@
+model_checkpoint_path: "./models/crack_capcha.model-22000"
+all_model_checkpoint_paths: "./models/crack_capcha.model-22000"
