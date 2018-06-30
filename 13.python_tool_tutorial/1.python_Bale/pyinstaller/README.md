@@ -6,6 +6,7 @@ https://github.com/pyinstaller/pyinstaller
 
 # 安装：
 A：pip install pyinstaller
+
 b：https://pypi.org/project/PyInstaller/#files 下载源码，进入目录后 python setup.py install
 
 # 用法：
@@ -13,6 +14,7 @@ pyinstaller /path/to/yourscript.py
 
 # 注意：
 操作系统不互通，linux下打包的只能再linux下运行，windows下打包只能再windows下运行
+
 生成的可执行文件再dist目录下，可执行文件的名字与py文件名一致
 
 该命令会在同目录下生成这样文件结构：其中requests_baidu.py 是我原始脚本命令 dist/requests_baidu是生成的可执行文件，需要保持文件结构才能正常运行
