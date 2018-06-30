@@ -7,4 +7,10 @@
 begin: 2018-06-30
 
 
+主要内容：各种python的源码github网址，安装方式，试用脚本，主要使用函数说明
+
 目录
+
+1.python_Bale python打包工具
+
+  1.pyinstaller 将Python程序冻结（包）到独立的可执行文件 http://www.pyinstaller.org
