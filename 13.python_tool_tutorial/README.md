@@ -13,4 +13,4 @@ begin: 2018-06-30
 
 1.python_Bale python打包工具
 
-  1.pyinstaller 将Python程序冻结（包）到独立的可执行文件 http://www.pyinstaller.org
+  pyinstaller 将Python程序冻结（包）到独立的可执行文件 http://www.pyinstaller.org
