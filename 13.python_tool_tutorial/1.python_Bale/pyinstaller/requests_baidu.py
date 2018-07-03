@@ -21,3 +21,5 @@ response = requests.request("GET", url, headers=headers, params=querystring)
 with open("baidu.html","wb") as f:
     f.write(response.content)
 print(response.text)
+if __name__ == '__main__':
+    main()
