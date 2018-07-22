@@ -42,6 +42,10 @@ def get_request(url,headers):
     	"http": "http://"+ip+':'+duankou,
     	"https": "http://"+ip+':'+duankou,
     }
+    #如果代理需要账户和密码，则需这样：
+    #proxies = {
+    #    "http": "http://user:pass@10.10.1.10:3128/",
+    #}
     #url = "https://www.urlteam.org"
 
     html=requests.get(url,headers=headers,timeout=20,proxies=proxies).text#.decode('utf-8')
