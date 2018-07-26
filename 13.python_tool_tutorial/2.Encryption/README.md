@@ -1,5 +1,6 @@
 在python3的标准库中，已经移除了md5，而关于hash加密算法都放在hashlib这个标准库中，如SHA1、SHA224、SHA256、SHA384、SHA512和MD5算法等。
 
+
 python3的hashlib文档：
 https://docs.python.org/3/library/hashlib.html?highlight=hashlib#credits
 
