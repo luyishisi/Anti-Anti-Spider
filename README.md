@@ -41,7 +41,7 @@ https://github.com/luyishisi/Anti-Anti-Spider/blob/master/tree.txt
 
 5:爬虫项目源码 {优酷网，腾讯视频，推特，拉钩网，百度地图，妹子图网，百家号，百度百科，csdn，新浪微博, 淘宝采集}
 
-6:ip跟换技术   {代理，tor，adsl}
+6:ip更换技术   {代理，tor，adsl}
 
 7:请求伪造     {phantomjs，requests，selenium}
 
