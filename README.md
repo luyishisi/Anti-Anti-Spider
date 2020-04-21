@@ -1,52 +1,61 @@
-# Anti-Anti-Spider
-# author@luyishisi & leng-yue
-# 2016-10-24 begin  #2017-5-8 end
+## 基于CNN的验证码图片识别
+### 简介
+	本项目采用alexnet模型和letnet模型，可根据实际需要选择(在train_model.py中的train函数修改即可)95.5%
+### 作者有话说
+	不知不觉这个git库伴随我从16到到20年，带给我自己最棒的一段人生旅程，
+	整理了这份文档，希望任何想学习图片识别，玩玩卷积神经网络的同学可以最便捷的上手体验。
+	请谨慎使用技术，仅支持学习，不支持任何黑灰产相关
+	可参看：https://www.urlteam.cn/?p=1893 https://www.urlteam.cn/?p=1406
+	原先的Anti-Anti-Spider 全部内容移动到 原Anti-Anti-Spider 目录下
+	有何疑问可邮件 543429245@qq.com 咨询
 
-特别说明：这个项目最初源于对自己爬虫代码的整理以及技术规整，因此部分爬虫源码可能因为网站改版已经不可用，验证码识别方面因为我改良版本用于工作中不可开源，因此采用熊猫的cnn模型以及冷月的滑动破解模型，上传前均亲测可用，且已得其本人授权。
+#### Alexnet 模型结构
 
-仓库网址位于https://github.com/luyishisi/Anti-Anti-Spider 欢迎stat
+![](src/READMEIMG2.PNG)
 
-本项目由URLTEAM维护
+根据验证码的复杂度不同，训练的时间也会有较大的不同
+![](src/READMEIMG1.PNG)
 
-作者博客 https://www.urlteam.org
+###  使用方法
+	1.开始训练样本前，修改conf/config.json
+	2.将预处理过的数据集分成验证集和训练集，放到sample目录下
+	3.运行train_model.py开始训练，训练完成的模型保存至model_result中
+	4.将训练好的模型放置model_result，运行cnn_models/recognition.py，选定验证码，即可看到模型效果
+### 环境配置
+TensorFlow CPU版本安装：`pip install tensorflow==1.9.0`
+TensorFlow GPU版本安装：`pip install tensorflow-gpu==1.9.0`
+GUP版本的安装比较麻烦，需要安装CUDA和cuDNN才能使tensorflow调动GPU
+下图为TensorFlow，Python，CUDA与cuDNN之间的版本对应关系：
+![](./src/README_IMG0.PNG)
+CUDA与cuDNN安装过程主要有两步：
 
-项目简介：
-
-运用请求伪造，浏览器伪造,浏览器自动化，图像处理，ip处理等方式进行反爬虫技术的通用化代码库,方便未来快速开发。
-
-为以后的采集任务快速开展留下基础代码。
-
-如今项目会包含多项技术的样例代码.
-
-
-项目起因
-
-本身是想做一个反爬虫的技术攻关站点，如果在总结诸多技术中发觉可以将反反爬虫技术直接保留与代码中。
-
-在之后采集需要时能快速有效的测试该站点具有怎样的反爬特性，并且可以快速的进行代码复用
-
-你可以做什么： 提交你觉得难以采集的网站 联系方式： a83533774@gmail.com  
-
-项目结构树:（有待更新）
-
-https://github.com/luyishisi/Anti-Anti-Spider/blob/master/tree.txt
-
-重点项目：
-
-1:验证码     {亚马逊验证码破解，knn，svm，Tensorflow自动生成验证码并大量训练从而破解--98%成功率}
-
-2:代理       {抓取西刺代理，以及一个高可用的国外代理网站，并存入数据库，从而随时调用}
-
-3:代码模板    {多线程优化，百度地图可视化采集，聚焦爬虫，selenium模拟登陆，域名爬虫}
-
-5:爬虫项目源码 {优酷网，腾讯视频，推特，拉钩网，百度地图，妹子图网，百家号，百度百科，csdn，新浪微博, 淘宝采集}
-
-6:ip更换技术   {代理，tor，adsl}
-
-7:请求伪造     {phantomjs，requests，selenium}
-
-8:phantomjs   {伪造请求头，获取页面截图，获取页面源码，设置超时}
-
-9:selenium    {伪造请求头，支付宝模拟登陆}
-
-UrlSpider     {项目中常用的采集代码样本，经过多线程数据库操作优化，最高速度6kw/d}
+1. 到官网下载CUDA并安装
+2. 将cuDNN解压，复制到CUDA安装目录下
+这里提供两个文件的链接：
+CUDA：`https://developer.nvidia.com/cuda-toolkit-archive`
+cuDNN：`https://developer.nvidia.com/rdp/cudnn-archive`
+更具体的安装过程度娘可帮你轻松解决(linux,windows这两步的操作方法各不相同)
+### 项目结构
+```
+├─cnn_models
+│  ├─cnn_model.py		# CNN网络类
+│  └─recognition.py		# 验证训练结果
+├─conf
+│  └─config.json		# 配置文件
+├─logs			# 模型训练日志
+├─model_result	# 模型保存地址
+│  └─1040		# 一套训练完成的验证码训练集及对应模型
+├─sample
+│  ├─test		# 训练集（训练集与验证集一般是对总数据集9:1分割）
+│  └─train		# 验证集
+├─src			# 配置环境所需的工具，可根据自身情况到网上下载
+├─train_model.py		# 训练程序
+└─verify_sample.py		# 制作数据集（打标签加图片预处理）
+```
+### 图片预处理
++ 为验证码图片打上标签，如：
+![](./src/1040_2019-10-13_10_1092.jpg)
+命名为1040_2019-10-13_10_1092.jpg，1092为标签，其余为附加信息，可根据自己需要更改，用`_`分割即可
++ 由于模型输入要求输入必须为227*227，所有需要调整图片形状，verify_sample.py中提供有工具函数
+### 注意事项
+	alexnet输入必须为227*227的图片，所有图片预处理时可通过PIL中的函数线性转换图片形状，或者缩放后粘贴到227*227的背景中。
