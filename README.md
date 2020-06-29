@@ -8,6 +8,8 @@
 	可参看：https://www.urlteam.cn/?p=1893 https://www.urlteam.cn/?p=1406
 	原先的Anti-Anti-Spider 全部内容移动到 原Anti-Anti-Spider 目录下
 	有何疑问可邮件 543429245@qq.com 咨询
+	模型文件下载 如果出现无法解压，可以使用：
+	https://www.urlteam.cn/%E5%8F%AF%E7%94%A8%E8%AE%AD%E7%BB%83%E9%9B%86%E4%B8%8E%E8%AE%AD%E5%A5%BD%E7%9A%84%E6%A8%A1%E5%9E%8B.zip
 
 #### Alexnet 模型结构
 
