@@ -55,11 +55,11 @@ def get_date_list(start=None, end=None):
 
 def get_label(date,typeid):
     '''从获取数据库获取标签'''
-    conn = pymysql.connect(host='193.112.136.148',
+    conn = pymysql.connect(host='ip',
                                  port=3306,
-                                 user='bcebos',
-                                 password='bcebos@123',
-                                 db='bcebos',
+                                 user='**',
+                                 password='**',
+                                 db='**',
                                  charset='utf8')
     cursor = conn.cursor()
     # sql = "SELECT result,savedir FROM new_ocr_dir WHERE typeid = '{0}' AND time LIKE '{1}%'".format(typeid,date)
