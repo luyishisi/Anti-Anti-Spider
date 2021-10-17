@@ -112,8 +112,7 @@ def make_sample():
             print(date)
             label_dir = get_label(date, typeid)
             labels, dirs = solve_lable_dir(label_dir)
-            for i in range(len(labels)):
-                label = labels[i]
+            for i, label in enumerate(labels):
                 label = label.replace('|','#')
                 dir = dirs[i]
                 set_label(label, dir, typeid, i, date)
